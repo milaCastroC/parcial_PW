@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria</title>
+    <link rel = "stylesheet" href = "../CSS/styleGaleria.css"> <!-- Enlace al archivo de estilos CSS -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=New+Amsterdam&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=New+Amsterdam&family=Oswald:wght@200..700&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=New+Amsterdam&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Shadows+Into+Light&display=swap"  rel="stylesheet">
+</head>
+<body>
+    
+        <header>
+            <img src="../Imagenes/Logotipo.png" alt="Logotipo" style="width: auto; max-height: 100px;" />
+            <div class="header-div" id="header-div">
+                <h1>Personal repo</h1>
+                <p>By: Camila Castro</p>
+            </div>
+             <!-- Botón para alternar la barra de navegación -->
+             <button class="menu-toggle" id="menu-toggle" hidden>
+                ☰
+            </button>
+        </header>
+    
+        <nav id = "nav-bar">
+            <ul>
+                <li><a href="indexHome.html">Home</a></li>
+                <li><a href="indexClicker.html">Clicker</a></li>
+                <li><a href="indexCalculadora.html">Calculadora</a></li>
+                <li><a href="indexFormulario.html">Formulario</a></li>
+                <li><a href="indexGaleria.html"class = "active">Galería</a></li>
+                <li><a href="indexToDo.html">To Do List</a></li>
+            </ul>
+        </nav>
+
+    <!-- Sección del banner-->
+    <div id = "banner">
+        <h2>Galería</h2>
+        <h6>by: @albusval</h6>
+        <img src = "../Imagenes/bannerGaleria.png"/>
+    </div>   
+     <!-- Contenedor de la galería de imágenes -->
+    <div class = "gallery-container">
+
+            <div class="grid-item">
+                <img src="../Imagenes/Afrechero Comun - Zonotrichia capensis 0926.jpg" alt="Afrechero Comun" width="230"/>
+                <a href="https://es.wikipedia.org/wiki/Zonotrichia_capensis" target="_blank">
+                     <div class="image-caption">Afrechero Comun</div>
+                </a>
+            </div>
+        
+            <div class="grid-item">
+                <img src="../Imagenes/Atrapamoscas Montañero - Myarchus cephalotes 0330.jpg" alt="Atrapamoscas Montañero" width="230"/>
+                <a href="https://es.wikipedia.org/wiki/Myiarchus_cephalotes" target="_blank">
+                    <div class="image-caption">Atrapamoscas Montañero</div>
+                </a>
+            </div>
+
+
+       
+            <div class="grid-item">
+                <img src = "../Imagenes/Asoma Candela - Hembra - Ramphocelus flamingerus 0968.jpg" alt = "Asoma Candela - Hembra" width="230"/>
+                <a href = "https://es.wikipedia.org/wiki/Ramphocelus_flammigerus" target = "_blank">
+                    <div class="image-caption">Asoma Candela - Hembra</div>
+                </a>
+            </div>
+
+            <div class="grid-item">
+                <img src = "../Imagenes/Atrapamoscas Pechirrojo - Pyrocephalus rubinus 358.jpg" alt = "Atrapamoscas Pechirrojo" width = "230"/>
+                <a href = "https://es.wikipedia.org/wiki/Pyrocephalus_rubinus" target = "_blank">
+                    <div class="image-caption">Atrapamoscas Pechirrojo</div>
+                </a> 
+            </div>
+            
+            <div class="grid-item">
+                <img src = "../Imagenes/Atrapamoscas Pechirrojo hembra - Pyrocephalus  rubinus 0520.jpg" alt = "Atrapamoscas Pechirrojo hembra"  width="230"/>
+                <a href = "https://es.wikipedia.org/wiki/Pyrocephalus_rubinus" target = "_blank">
+                    <div class="image-caption">Atrapamoscas Pechirrojo hembra</div>
+                </a>
+            </div>
+
+            <div class="grid-item">
+                <img src = "../Imagenes/Carpintero Habado - Melanerpes rubricapillus 359.jpg" alt = "Carpintero Habado"  width="230"/>
+                <a href = "https://es.wikipedia.org/wiki/Melanerpes_rubricapillus" target = "_blank">
+                    <div class="image-caption">Carpintero Habado</div>
+                </a>
+            </div>
+
+            <div class="grid-item">
+                <img src = "../Imagenes/Colibri Amazilia Colirrufo - Amazilia tzacatl 0846.jpg" alt = "Colibri Amazilia Colirrufo"  width="230"/>
+                <a href = "https://es.wikipedia.org/wiki/Amazilia_tzacatl" target = "_blank">
+                    <div class="image-caption">Colibri Amazilia Colirrufo</div>
+                </a>
+            </div>
+
+            <div class="grid-item">
+                <img src = "../Imagenes/Azulejo Comun - Thraupis episcopus 0522.jpg" alt = "Azulejo Comun "  width="230"/>
+                <a href = "https://es.wikipedia.org/wiki/Thraupis_episcopus" target = "_blank">
+                    <div class="image-caption">Azulejo Comun </div>
+                </a>
+            </div>
+
+            <div class = "grid-item">
+                <img src = "../Imagenes/Canario Silvestre 0025.jpg" alt = "Canario Silvestre"  width="230"/>
+                <a href = "https://es.wikipedia.org/wiki/Serinus_canaria" target = "_blank">
+                    <div class = "image-caption">Canario Silvestre</div>
+                </a>
+            </div>
+
+            <div class = "grid-item">
+                <img src = "../Imagenes/Carpintero Cariblanco - Piculus Rubiginosus 0322.jpg" alt = "Carpintero Cariblanco"  width="230"/>
+                <a href = "https://es.wikipedia.org/wiki/Colaptes_rubiginosus" target = "_blank">
+                    <div class = "image-caption">Carpintero Cariblanco</div>
+                </a>
+            </div>
+
+            <div class = "grid-item">
+                <img src = "../Imagenes/Colibri - Colibri coruscans 0455.jpg" alt = "Colibri"  width="230"/>
+                <a href = "https://es.wikipedia.org/wiki/Colibri_coruscans" target = "_blank">
+                    <div class = "image-caption">Colibri</div>
+                </a>
+            </div>
+
+            <div class = "grid-item">
+                <img src = "../Imagenes/Carriqui 364.jpg" alt = "Carriqui"  width="230"/>
+                <a href = "https://es.wikipedia.org/wiki/Cyanocorax_yncas" target = "_blank">
+                    <div class = "image-caption">Carriqui</div>
+                </a>
+            </div>
+
+            <div class = "grid-item">
+                <img src = "../Imagenes/Bichofue Juvenil - Pitangus sulphuratus 1010.jpg" alt = "Bichofue Juvenil"  width="230"/>
+                <a href = "https://es.wikipedia.org/wiki/Pitangus_sulphuratus" target = "_blank">
+                    <div class = "image-caption">Bichofue Juvenil</div>
+                </a>
+            </div>
+
+            <div class = "grid-item">
+                <img src = "../Imagenes/Barranquero  - Momotus aequatorialis 1055.jpg" alt = "Barranquero"  width="230"/>
+                <a href = "https://es.wikipedia.org/wiki/Momotus_aequatorialis" target = "_blank">
+                    <div class = "image-caption">Barranquero</div>
+                </a>
+            </div>
+
+            <div class = "grid-item">
+                <img src = "../Imagenes/Colibri Collarejo - Florisuga mellivora 0844.jpg" alt = "Colibri Collarejo"  width="230"/>
+                <a href = "https://es.wikipedia.org/wiki/Florisuga_mellivora" target = "_blank">
+                    <div class = "image-caption">Colibri Collarejo</div>
+                </a>
+            </div>
+
+            <div class = "grid-item">
+                <img src = "../Imagenes/Colibri Silfo Coliverde - Aglaiocercus kingi  350.jpg" alt = "Colibri Silfo Coliverde"  width="230"/>
+                <a href = "https://es.wikipedia.org/wiki/Aglaiocercus_kingii" target = "_blank">
+                    <div class = "image-caption">Colibri Silfo Coliverde</div>
+                </a>
+            </div>
+
+            <div class = "grid-item">
+                <img src = "../Imagenes/Loro Periquito Anteojos - Forpus conspicillatus 0424.jpg" alt = "Loro Periquito Anteojos"  width="230"/>
+                <a href = "https://es.wikipedia.org/wiki/Forpus_conspicillatus" target = "_blank">
+                    <div class = "image-caption">Loro Periquito Anteojos</div>
+                </a>
+            </div>
+
+            <div class = "grid-item">
+                <img src = "../Imagenes/Guacamaya con Luna 0425.jpg" alt = "Guacamaya con Luna"  width="230"/>
+                <a href = "https://es.wikipedia.org/wiki/Ara_severus" target = "_blank">
+                    <div class = "image-caption">Guacamaya</div>
+                </a>
+            </div>
+            <div class = "grid-item">
+                <img src = "../Imagenes/Guacamaya Cariseca - Ara severa 0923.jpg" alt = "Guacamaya Cariseca"  width="230"/>
+                <a href = "https://es.wikipedia.org/wiki/Ara_severus" target = "_blank">
+                    <div class = "image-caption">Guacamaya</div>
+                </a>
+            </div>
+
+            <div class = "grid-item">
+                <img src = "../Imagenes/Mielero Verde - Chlorophanes spiza 0466.jpg" alt = "Mielero Verde"  width="230"/>
+                <a href = "https://es.wikipedia.org/wiki/Chlorophanes_spiza" target = "_blank">
+                    <div class = "image-caption">Mielero Verde</div>
+                </a>
+            </div>
+
+            <div class = "grid-item">
+                <img src = "../Imagenes/Pavo Real 0614.jpg" alt = "Pavo Real"  width="230"/>
+                <a href = "https://es.wikipedia.org/wiki/Pavo_cristatus" target = "_blank">
+                    <div class = "image-caption">Pavo Real</div>
+                </a>
+            </div>
+        
+            <div class = "grid-item">
+                <img src = "../Imagenes/Piranga Bermeja - Piranga flava 331.jpg" alt = "Piranga Bermeja" width="230"/>
+                <a href = "https://es.wikipedia.org/wiki/Piranga_hepatica" target = "_blank">
+                    <div class = "image-caption">Piranga Bermeja</div>
+                </a>
+            </div>
+            <div class = "grid-item">
+                <img src = "../Imagenes/Piranga Bermeja H - Piranga flava 0508.jpg" alt = "Piranga Bermeja H"  width="230"/>
+                <a href = "https://es.wikipedia.org/wiki/Piranga_hepatica" target = "_blank">
+                    <div class = "image-caption">Piranga Bermeja</div>
+                </a>
+            </div>
+        
+            <div class = "grid-item">
+                <img src = "../Imagenes/Tangara Rastrojera - Stilpnia vitriolina  0855.jpg" alt = "Tangara Rastrojera"  width="230"/>
+                <a href = "https://es.wikipedia.org/wiki/Stilpnia_vitriolina" target = "_blank">
+                    <div class = "image-caption">Tangara Rastrojera</div>
+                </a>
+            </div>
+
+            <div class="grid-item">
+                <img src = "../Imagenes/Toche Enjalmado - Ramphocelus flammigerus 344.jpg" alt = "Toche Enjalmado"  width="230"/>
+                <a href = "https://es.wikipedia.org/wiki/Ramphocelus_flammigerus" target = "_blank">
+                    <div class = "image-caption">Toche Enjalmado</div>
+                </a>
+            </div>
+
+            <div class = "grid-item">
+                <img src = "../Imagenes/Turpial Amarillo - Icterus nigrocularis 1011.jpg" alt = "Turpial Amarillo"  width="230"/>
+                <a href = "https://es.wikipedia.org/wiki/Icterus_nigrogularis" target = "_blank">
+                    <div class = "image-caption">Turpial Amarillo</div>
+                </a>
+            </div>
+
+            <div class = "grid-item">
+                <img src = "../Imagenes/Turpial Costeño - Icterus icterus 0997.jpg" alt = "Turpial Costeño"  width="230"/>
+                <a href = "https://es.wikipedia.org/wiki/Icterus_icterus" target = "_blank">
+                    <div class = "image-caption">Turpial Costeño</div>
+                </a>
+            </div>
+
+            <div class = "grid-item">
+                <img src = "../Imagenes/Urraca Comun - Pica pica - Barcelona 0843.jpg" alt = "Pica pica"  width="230"/>
+                <a href = "https://es.wikipedia.org/wiki/Pica_pica" target = "_blank">
+                    <div class = "image-caption">Pica pica</div>
+                </a>
+            </div>
+
+    </div>
+
+    <footer>
+        <div class = "footer-wrapper">
+            <div class = "footer-columns">
+                <section>
+                    <h3>Projects</h3>
+                    <ul>
+                        <li><a href="indexHome.html">Home</a></li>
+                        <li><a href="indexClicker.html">Clicker</a></li>
+                        <li><a href="indexCalculadora.html">Calculadora</a></li>
+                        <li><a href="indexFormulario.html">Formulario</a></li>
+                        <li><a href="indexGaleria.html">Galería</a></li>
+                        <li><a href="indexToDo.html">To Do List</a></li>
+                    </ul>
+                </section>
+                <section class = "footer-logo">
+                    <img src = "../Imagenes/Logotipo.png" alt = "Logotipo" />
+                </section>
+                <section>
+                    <h3>Contact Me</h3>
+                        <div class = "social-bottom">
+                            <div class = "social-links">
+                                <ul>
+                                    <li>
+                                        <a href = "mailto: castro.maria.5191@eam.edu.co" title = "Email" target="_blank">
+                                            <img src = "../Imagenes/gmail.svg" alt = "Email" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href = "https://www.linkedin.com/in/maria-camila-castro-cardona-8733b3265" title = "LinkedIn" target="_blank">
+                                            <img src = "../Imagenes/linkedin.svg" alt = "LinkedIn" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href = "https://github.com/milaCastroC" title = "GitHub" target="_blank">
+                                            <img src = "../Imagenes/github.svg" alt = "GitHub" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href = "https://www.instagram.com/mila_castro_c/" title = "Instagram" target="_blank">
+                                            <img src = "../Imagenes/instagram.svg" alt = "Instagram" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href = "https://www.facebook.com/mariacamila.castrocardona?mibextid=LQQJ4d" title = "Facebook" target="_blank">
+                                            <img src = "../Imagenes/facebook.svg" alt = "Facebook" />
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class = "info" id = "info">
+                            <address>
+                                <span>Maria Camila Castro Cardona</span>
+                                <a href = "mailto: castro.maria.5191@eam.edu.co" title = "Email" target="_blank">castro.maria.5191@eam.edu.co</a>
+                                <span>Cel: 3014181032</span>
+                            </address>
+                        </div>
+                </section>
+                    <div class = "footer-bottom">
+                        <div class = "footer-bottom-wrapper">
+                            <small>
+                                © Institucion universitaria EAM
+                                <span id = "year"></span>, All rights reserved
+                            </small>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+<!-- Enlace al archivo JavaScript que maneja la galería -->
+    <script src = "../JS/scriptGaleria.js"> </script>
+</html>

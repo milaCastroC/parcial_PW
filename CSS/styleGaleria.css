@@ -1,0 +1,415 @@
+body{
+    background-color: black;
+}
+
+/* Header */
+header {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+.header-div{
+    display: inline-block;
+}
+
+header img {
+    max-width: 7%;
+    height: auto;
+}
+
+header h1 {
+    margin: 0;
+    font-family:  "New Amsterdam", sans-serif;
+    color:#ffffff;
+}
+
+header p {
+    font-size: 100%;
+    font-family: "Shadows Into Light", cursive;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+    color:#ffffff
+}
+
+/* Navegación */
+nav {
+    background: linear-gradient(45deg, #ffffff, #10ffbf);
+    padding: 10px 0;
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+nav ul li a.active {
+    color: #10ffbf;
+    background-color: #333;
+    border-radius: 5px;
+    padding: 5px 15px;
+}
+
+
+/* Estilos para el banner */
+#banner {
+    position: relative; /* Posiciona el contenedor del banner de manera relativa */
+    text-align: center; /* Centra el contenido del texto dentro del banner */
+    margin-bottom: 20px; /* Agrega espacio debajo del banner */
+}
+
+#banner img {
+    width: 100%; /* La imagen ocupa todo el ancho disponible del banner */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 8px; /* Redondea las esquinas de la imagen del banner */
+}
+
+#banner h2 {
+    position: absolute; /* Posiciona el texto de manera absoluta*/
+    top: 40%; /* Ubica el texto*/
+    left: 50%; /* Centra horizontalmente el texto */
+    transform: translate(-50%, -50%); /* Ajusta la posición para centrar el texto*/
+    color: white; /* Color de texto*/
+    font-size: 88px; /* Tamaño para el texto */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Añade sombra al texto*/
+    margin: 0; /* Elimina el margen*/
+}
+
+#banner h6 {
+    position: absolute; /* Posiciona el texto de manera absoluta*/
+    top: 60%; /* Ubica el texto */
+    left: 50%; /* Centra horizontalmente el texto */
+    transform: translate(-50%, -50%); /* Ajusta la posición para centrar el texto */
+    color: white; /* Color de texto */
+    font-size: 20px; /* Tamaño para el subtítulo */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Añade sombra al texto */
+    margin: 0; /* Elimina el margen*/
+}
+
+/* Estilos para la galería tipo Masonry */
+.gallery-container {
+    display: grid; /* Utiliza un grid para organizar las imágenes */
+    grid-template-columns: repeat(auto-fill, 230px); /* Crea columnas de 230px que se repiten para llenar el espacio disponible */
+    gap: 20px; /* Añade espacio entre los elementos del grid */
+    justify-content: center; /* Centra la galería horizontalmente */
+    margin: 0 auto; /* Añade un margen para centrar */
+}
+
+.grid-item {
+    width: 230px; /* Establece el ancho fijo de cada imagen*/
+    margin-bottom: 40px; /* Añade un margen inferior */
+    border-radius: 0px 0px 30px 30px; /* Redondea las esquinas */
+    cursor:pointer; /* Cambia el cursor cuando se pasa sobre la imagen*/
+    background-color: #ffffff; /* Establece un color de fondo*/
+    text-align: center; /* Centra el texto debajo de la imagen */
+
+}
+
+.image-caption {
+    padding: 10px; /* Añade espacio alrededor del texto */
+    color: black; /* Color del texto */
+    font-size: 16px; /* Tamaño del texto */
+    background-color: #ffffff; /* Fondo del texto */
+    border-radius: 0 0 15px 15px; /* Redondea las esquinas inferiores */
+    display: block; /*texto se mostrado como bloque */
+    font-family: system-ui;/*Fuente del texto*/
+    font-weight: bold;/*Fuente en negrita*/
+}
+
+.gallery-container img:hover {
+    filter: opacity(0.9); /* Reduce ligeramente la opacidad*/
+    transform: scale(1.05); /* Aumenta el tamaño de la imagen */
+}
+
+/* Estilos generales para el footer */
+footer {
+    background-color: #333; /* Color de fondo oscuro para el footer */
+    color: #fff; /* Color de texto blanco para contraste */
+    padding: 40px 20px;
+    font-family: "Open Sans", sans-serif;
+    position: relative; /* Asegura que el footer se ajuste al contenido */
+    text-align: center; /* Centra el texto dentro de cada columna */
+}
+
+/* Columnas del footer */
+.footer-columns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; /* Centra las columnas horizontalmente */
+    margin-bottom: 60px; /* Espacio para el footer inferior */
+}
+
+/* Logo en el footer */
+.footer-logo {
+    flex: 1;
+    text-align: center;
+}
+
+.footer-logo img {
+    max-width: 150px; /* Ajusta el tamaño del logotipo */
+    height: auto;
+}
+
+/* Sección de proyectos y contacto */
+.footer-columns section {
+    flex: 1;
+    min-width: 200px;
+    padding-bottom: 5%;
+}
+
+.footer-columns h3 {
+    font-family: "Oswald", sans-serif;
+    font-size: 24px; /* Ajuste el tamaño de la fuente */
+    margin-bottom: 10px;
+}
+
+.footer-columns ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-columns ul li {
+    margin-bottom: 10px;
+}
+
+.footer-columns ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.footer-columns ul li a:hover {
+    color: #10ffbf; /* Color del enlace al pasar el ratón */
+}
+
+/* Redes sociales */
+.social-links ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.social-links img {
+    width: 30px; /* Ajuste el tamaño de los iconos */
+    height: 30px;
+    transition: opacity 0.3s ease;
+    filter: invert(1);
+}
+
+.social-links img:hover {
+    opacity: 0.8; /* Efecto de opacidad en las redes sociales al pasar el ratón */
+}
+
+/* Estilos para la sección de información de contacto */
+.info {
+    color: #fff; /* Color de texto blanco para contraste */
+    padding: 20px;
+    text-align: left; /* Alinea el texto a la izquierda */
+    margin: 20px auto; /* Espacio alrededor y centrado horizontalmente */
+    max-width: 400px; /* Ancho máximo para la sección de contacto */
+    text-align: center;
+}
+
+.info address {
+    font-style: normal; /* Elimina el estilo itálico predeterminado de <address> */
+    font-family: "Open Sans", sans-serif;
+}
+
+.info span {
+    display: block; /* Asegura que cada elemento esté en su propia línea */
+}
+
+.info a {
+    color: #10ffbf; /* Color del enlace */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    font-weight: bold; /* Negrita para resaltar el enlace */
+}
+
+.info a:hover {
+    text-decoration: underline; /* Subrayado al pasar el ratón para mejor visibilidad */
+}
+
+/* Parte inferior del footer */
+.footer-bottom {
+    background-color: #10ffbf;
+    padding: 20px 0;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+
+/* Media Query para dispositivos móviles */
+@media (max-width: 768px) {
+    .gallery-container {
+        /* En pantallas con un ancho menor a 768px, ajusta el grid para usar columnas más pequeñas */
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-container {
+        /* En pantallas con un ancho menor a 480px, la galería se ajusta a una sola columna */
+        grid-template-columns: 1fr;
+    }
+
+     /* Mostrar el botón de menú */
+     .menu-toggle {
+        display: inline-block;
+        background: none;
+        border: none;
+        font-size: 30px;
+        cursor: pointer;
+        font-weight: bold;
+        color:#ffffff;
+    }
+
+    header img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    header h1 {
+        font-size: 20px;
+        margin-right: 60px;
+    }
+
+    header p {
+        font-size: 10px;
+    }
+
+    /* Ocultar la barra de navegación por defecto */
+    nav {
+        display: none;
+    }
+
+    /* Mostrar la barra de navegación cuando se activa */
+    nav.active {
+        display: block;
+
+        top: 22%;
+        width: 100%;
+        background-color: #ffffff;
+        z-index: 1000;
+    }
+
+    nav ul {
+        text-align: left;
+        padding: 10px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    nav ul li a {
+        display: block;
+        padding: 10px;
+        border-bottom: 1px solid #10ffbf;
+        text-align: center;
+    }
+
+    .container {
+        width: 90%; /* Ajusta el ancho del contenedor para ocupar el 90% del ancho de la pantalla en dispositivos móviles */
+        margin: 10px; /* Reduce el margen exterior para ajustarse mejor en pantallas pequeñas */
+        padding: 20px; /* Reduce el padding para mejorar el ajuste en pantallas pequeñas */
+    }
+
+    button {
+        font-size: 14px; /* Ajusta el tamaño de la fuente del botón para mejor visualización en dispositivos móviles */
+        padding: 10px 20px; /* Ajusta el padding para que el botón se vea apropiado en pantallas pequeñas */
+    }
+
+    .footer-logo img {
+        max-width: 20%;
+    }
+
+    /* Sección de proyectos y contacto */
+    .footer-columns {
+        justify-content: center; /* Centra las columnas horizontalmente */
+        text-align: center; /* Centra el texto dentro de cada columna */
+    }
+
+    .footer-columns section {
+        min-width: 200px;
+    }
+
+    .info {
+        padding: 15px; /* Reducir el padding para pantallas pequeñas */
+        margin: 10px auto; /* Espacio alrededor y centrado horizontalmente */
+        max-width: 100%; /* Ancho completo en pantallas pequeñas */
+    }
+
+    .info span {
+        font-size: 14px; /* Reducir el tamaño de fuente para pantallas más pequeñas */
+        margin-bottom: 8px; /* Espacio reducido entre los elementos */
+    }
+
+    .info a {
+        font-size: 14px; /* Reducir el tamaño de fuente del enlace */
+    }
+
+}
+
+/* Estilos para el contenedor del lightbox */
+.lightbox {
+    display: none; /* Oculta el lightbox*/
+    position: fixed; /* Fija la posición en la ventana */
+    left: 0; /* Posiciona el lightbox al borde izquierdo de la ventana */
+    top: 0; /* Posiciona el lightbox al borde superior de la ventana */
+    width: 100%; /* El lightbox ocupa todo el ancho de la ventana */
+    height: 100%; /* El lightbox ocupa todo el alto de la ventana */
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo semitransparente*/
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+}
+
+/* Estilos para la imagen dentro del lightbox */
+.lightbox img {
+    max-width: 90%; /*máximo el 90% del ancho de la ventana */
+    max-height: 80%; /*máximo el 80% del alto de la ventana */
+}
+
+/* Estilos para el texto de pie de imagen (caption) en el lightbox */
+.lightbox-caption {
+    margin-top: 15px; /* Espacio superior entre la imagen y el caption */
+    color: #fff; /* Color del texto*/
+    font-size: 18px; /* Tamaño de fuente del texto */
+    text-align: center; /* Centra el texto horizontalmente */
+}
+
+/* Estilos para el botón de cerrar el lightbox */
+.lightbox-close {
+    font-family: Arial, Helvetica, sans-serif; /* Fuente para el botón */
+    position: absolute; /* Posiciona el botón en un lugar específico del lightbox */
+    top: 20px; /* Margen superior desde la parte superior de la ventana */
+    right: 30px; /* Margen derecho desde derecha */
+    color: #fff; /* Color del texto del botón */
+    font-size: 40px; /* Tamaño de la fuente del botón */
+    font-weight: bold; /* Fuente en negrita */
+    text-decoration: none; /* Quita el subrayado del botón */
+    cursor: pointer; /* Cambia el cursor a una mano cuando se pasa sobre el botón */
+}
+

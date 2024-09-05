@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel = "stylesheet" href = "../CSS/styleCalculadora.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=New+Amsterdam&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=New+Amsterdam&family=Oswald:wght@200..700&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=New+Amsterdam&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Shadows+Into+Light&display=swap"  rel="stylesheet">
+
+
+</head>
+<body>
+
+    <header>
+        <img src="../Imagenes/Logotipo.png" alt="Logotipo" style="width: auto; max-height: 100px;" />
+        <div class="header-div" id="header-div">
+            <h1>Personal repo</h1>
+            <p>By: Camila Castro</p>
+        </div>
+         <!-- Botón para alternar la barra de navegación -->
+         <button class="menu-toggle" id="menu-toggle" hidden>☰</button>
+    </header>
+
+    <nav id = "nav-bar">
+        <ul>
+            <li><a href="indexHome.html">Home</a></li>
+            <li><a href="indexClicker.html">Clicker</a></li>
+            <li><a href="indexCalculadora.html"  class = "active">Calculadora</a></li>
+            <li><a href="indexFormulario.html">Formulario</a></li>
+            <li><a href="indexGaleria.html">Galería</a></li>
+            <li><a href="indexToDo.html">To Do List</a></li>
+        </ul>
+    </nav>
+    
+<div class = "calculadora-container">
+    <div class = "sidebar" id = "sidebar">   <!-- Barra lateral con opciones de color para la calculadora -->
+        <button class="toggle-btn" onclick = "toggleSidebar()">☰</button>
+        
+        <h2>Colores de calculadora</h2>
+        
+        <!-- Lista de botones para cambiar el tema de la calculadora -->
+        <ul>
+            <li><button class="color-btn" data-theme="green" onmouseover="previewTheme('green')" onmouseout="resetTheme()" onclick="applyTheme('green')">Color verde</button></li>
+            <li><button class="color-btn" data-theme="yellow" onmouseover="previewTheme('yellow')" onmouseout="resetTheme()" onclick="applyTheme('yellow')">Color amarillo</button></li>
+            <li><button class="color-btn" data-theme="pink" onmouseover="previewTheme('pink')" onmouseout="resetTheme()" onclick="applyTheme('pink')">Color rosado</button></li>
+            <li><button class="color-btn" data-theme="blue" onmouseover="previewTheme('blue')" onmouseout="resetTheme()" onclick="applyTheme('blue')">Color azul</button></li>
+            <li><button class="color-btn" data-theme="reset" onmouseover="previewTheme('reset')" onmouseout="resetTheme()" onclick="applyTheme('reset')">Color reset</button></li>
+        </ul>
+        
+    </div>
+    
+    <div class = "calculator" id="calculator"> <!-- Contenedor de la calculadora -->
+        <div class = "display-content"> <!-- pantalla de la calculadora -->
+            <input type = "text", id = "display", name = "display", disabled> <!-- Campo de texto para mostrar el valor actual de la calculadora -->
+        </div>
+
+        <!-- Contenedor de los botones de la calculadora -->
+        <div class = "buttons", id = "buttons", name = "buttons">
+            <button class = "btn" onclick = "appendNumber('7')">7</button>
+            <button class = "btn" onclick = "appendNumber('8')">8</button>
+            <button class = "btn" onclick = "appendNumber('9')">9</button>
+            <button class = "btn-operator" onclick = "chooseOperation('+')">+</button>
+
+            <button class = "btn" onclick = "appendNumber('4')">4</button>
+            <button class = "btn" onclick = "appendNumber('5')">5</button>
+            <button class = "btn" onclick = "appendNumber('6')">6</button>
+            <button class = "btn-operator" onclick = "chooseOperation('-')">-</button>
+
+            <button class = "btn" onclick = "appendNumber('1')">1</button>
+            <button class = "btn" onclick = "appendNumber('2')">2</button>
+            <button class = "btn" onclick = "appendNumber('3')">3</button>
+            <button class = "btn-operator" onclick = "chooseOperation('x')">x</button>
+
+            <button class = "btn" onclick = "appendNumber('0')">0</button>
+            <button class = "btn-clear" onclick = "clearDisplay('C')">C</button>
+            <button class = "btn-operator" onclick = "calculate('=')">=</button>
+            <button class = "btn-operator" onclick = "chooseOperation('/')">/</button>
+            
+
+
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class = "footer-wrapper">
+        <div class = "footer-columns">
+            <section>
+                <h3>Projects</h3>
+                <ul>
+                    <li><a href="indexHome.html">Home</a></li>
+                    <li><a href="indexClicker.html">Clicker</a></li>
+                    <li><a href="indexCalculadora.html">Calculadora</a></li>
+                    <li><a href="indexFormulario.html">Formulario</a></li>
+                    <li><a href="indexGaleria.html">Galería</a></li>
+                    <li><a href="indexToDo.html">To Do List</a></li>
+                </ul>
+            </section>
+            <section class = "footer-logo">
+                <img src = "../Imagenes/Logotipo.png" alt = "Logotipo" />
+            </section>
+            <section>
+                <h3>Contact Me</h3>
+                    <div class = "social-bottom">
+                        <div class = "social-links">
+                            <ul>
+                                <li>
+                                    <a href = "mailto: castro.maria.5191@eam.edu.co" title = "Email" target="_blank">
+                                        <img src = "../Imagenes/gmail.svg" alt = "Email" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href = "https://www.linkedin.com/in/maria-camila-castro-cardona-8733b3265" title = "LinkedIn" target="_blank">
+                                        <img src = "../Imagenes/linkedin.svg" alt = "LinkedIn" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href = "https://github.com/milaCastroC" title = "GitHub" target="_blank">
+                                        <img src = "../Imagenes/github.svg" alt = "GitHub" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href = "https://www.instagram.com/mila_castro_c/" title = "Instagram" target="_blank">
+                                        <img src = "../Imagenes/instagram.svg" alt = "Instagram" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href = "https://www.facebook.com/mariacamila.castrocardona?mibextid=LQQJ4d" title = "Facebook" target="_blank">
+                                        <img src = "../Imagenes/facebook.svg" alt = "Facebook" />
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class = "info" id = "info">
+                        <address>
+                            <span>Maria Camila Castro Cardona</span>
+                            <a href = "mailto: castro.maria.5191@eam.edu.co" title = "Email" target="_blank">castro.maria.5191@eam.edu.co</a>
+                            <span>Cel: 3014181032</span>
+                        </address>
+                    </div>
+            </section>
+                <div class = "footer-bottom">
+                    <div class = "footer-bottom-wrapper">
+                        <small>
+                            © Institucion universitaria EAM
+                            <span id = "year"></span>, All rights reserved
+                        </small>
+                    </div>
+                </div>
+        </div>
+    </div>
+</footer>
+
+    <!-- Enlace al archivo JavaScript para la funcionalidad de la calculadora -->
+    <script src = "../JS/scriptCalculadora.js"></script>
+</body>
+</html>

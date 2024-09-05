@@ -1,0 +1,352 @@
+.content {
+    font-family: Arial, sans-serif;/* Define la fuente de texto */
+    background-image: url('../Imagenes/fondoClicker.jpg');/* Aplica la imagen de fondo  */
+    background-size: cover;/* Acomoda la imagen al contenedor */
+    background-position: center;/* Centra la imagen */
+    display: flex;/* Alineacion y distribucion de los elementos */
+    justify-content: center;/* Centra horizontalmente los elementos dentro del contenedor */
+    align-items: center;/* Centra verticalmente los elementos dentro del contenedor */
+    height: 100vh;/* Para que ocupe la altura del navegador*/
+    margin: 0;/* Elimina el margen del contenedor.*/
+}
+
+/* Header */
+header {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+.header-div{
+    display: inline-block;
+}
+
+header img {
+    max-width: 7%;
+    height: auto;
+}
+
+header h1 {
+    margin: 0;
+    font-family:  "New Amsterdam", sans-serif;
+    color: #ffffff;
+}
+
+header p {
+    font-size: 100%;
+    font-family: "Shadows Into Light", cursive;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+}
+
+/* Navegación */
+nav {
+    background: linear-gradient(45deg, #ffffff, #10ffbf);
+    padding: 10px 0;
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+nav ul li a.active {
+    color: #10ffbf;
+    background-color: #333;
+    border-radius: 5px;
+    padding: 5px 15px;
+}
+
+
+.container {
+    background-color: #fff;/* Color de fondo*/
+    padding: 20px 30px;/* Espacio en los lados*/
+    border-radius: 10px;/* Redondea los bordes*/
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);/* Pone sombra */
+    text-align: center;/* Centra el texto dentro del contenedor */
+}
+
+h1 {
+    font-size: 24px;/* Tamaño del texto del título */
+    margin-bottom: 20px;/* Maregn inferior debajo del título */
+    color: #333;/* Color del texto */
+}
+
+#contador {
+    font-size: 48px;/* Tamaño del texto */
+    font-weight: bold;/* Negrita al texto*/
+    color: #333;/* Color del texto*/
+    margin-bottom: 20px;/* Añade margen inferior */
+    display: block;/* visualización en bloque */
+}
+
+.comand-btn {
+    font-size: 16px;/* Tamaño del texto */
+    padding: 10px 20px;/* Espacio interno */
+    margin: 5px;/* Margen alrededor */
+    border: none;/* Elimina los bordes */
+    border-radius: 5px;/* Redondea los bordes */
+    background-color: #007bff;/* Fondo */
+    color: white;/* Texto*/
+    cursor: pointer;/* Cambio del cursor*/
+    transition: background-color 0.3s;/* Transicion de cmabio de color */
+}
+
+.comand-btn :hover {
+    background-color: #0056b3;/* Cambia el fondo al pasar el ratón*/
+}
+
+.comand-btn :active {
+    background-color: #00408d;/* Cambia el fondo al hacer click */
+}
+
+#reiniciar {
+    font-size: 16px;/* Tamaño del texto */
+    padding: 10px 20px;/* Espacio interno */
+    margin: 5px;/* Margen alrededor */
+    border: none;/* Elimina los bordes */
+    border-radius: 5px;/* Redondea los bordes */
+    color: white;/* Texto*/
+    cursor: pointer;/* Cambio del cursor*/
+    transition: background-color 0.3s;/* Transicion de cmabio de color */
+    background-color: #dc3545;/* Estilo del botón reiniciar*/
+}
+
+#reiniciar:hover {
+    background-color: #c82333;/*Cambia el fondo al pasar el ratón */
+}
+
+#reiniciar:active {
+    background-color: #a71d2a;/*  Cambia el fondo al hacer click */
+}
+
+/* Estilos generales para el footer */
+footer {
+    background-color: #333; /* Color de fondo oscuro para el footer */
+    color: #fff; /* Color de texto blanco para contraste */
+    padding: 40px 20px;
+    font-family: "Open Sans", sans-serif;
+    position: relative; /* Asegura que el footer se ajuste al contenido */
+    text-align: center; /* Centra el texto dentro de cada columna */
+}
+
+/* Columnas del footer */
+.footer-columns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; /* Centra las columnas horizontalmente */
+    margin-bottom: 60px; /* Espacio para el footer inferior */
+}
+
+/* Logo en el footer */
+.footer-logo {
+    flex: 1;
+    text-align: center;
+}
+
+.footer-logo img {
+    max-width: 150px; /* Ajusta el tamaño del logotipo */
+    height: auto;
+}
+
+/* Sección de proyectos y contacto */
+.footer-columns section {
+    flex: 1;
+    min-width: 200px;
+    padding-bottom: 5%;
+}
+
+.footer-columns h3 {
+    font-family: "Oswald", sans-serif;
+    font-size: 24px; /* Ajuste el tamaño de la fuente */
+    margin-bottom: 10px;
+}
+
+.footer-columns ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-columns ul li {
+    margin-bottom: 10px;
+}
+
+.footer-columns ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.footer-columns ul li a:hover {
+    color: #10ffbf; /* Color del enlace al pasar el ratón */
+}
+
+/* Redes sociales */
+.social-links ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.social-links img {
+    width: 30px; /* Ajuste el tamaño de los iconos */
+    height: 30px;
+    transition: opacity 0.3s ease;
+    filter: invert(1);
+}
+
+.social-links img:hover {
+    opacity: 0.8; /* Efecto de opacidad en las redes sociales al pasar el ratón */
+}
+
+/* Estilos para la sección de información de contacto */
+.info {
+    color: #fff; /* Color de texto blanco para contraste */
+    padding: 20px;
+    text-align: left; /* Alinea el texto a la izquierda */
+    margin: 20px auto; /* Espacio alrededor y centrado horizontalmente */
+    max-width: 400px; /* Ancho máximo para la sección de contacto */
+    text-align: center;
+}
+
+.info address {
+    font-style: normal; /* Elimina el estilo itálico predeterminado de <address> */
+    font-family: "Open Sans", sans-serif;
+}
+
+.info span {
+    display: block; /* Asegura que cada elemento esté en su propia línea */
+}
+
+.info a {
+    color: #10ffbf; /* Color del enlace */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    font-weight: bold; /* Negrita para resaltar el enlace */
+}
+
+.info a:hover {
+    text-decoration: underline; /* Subrayado al pasar el ratón para mejor visibilidad */
+}
+
+/* Parte inferior del footer */
+.footer-bottom {
+    background-color: #10ffbf;
+    padding: 20px 0;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+
+/* Estilos específicos para dispositivos pequeños */
+@media (max-width: 768px) {
+    /* Mostrar el botón de menú */
+    .menu-toggle {
+        display: inline-block;
+        background: none;
+        border: none;
+        font-size: 30px;
+        cursor: pointer;
+        font-weight: bold;
+        color: #ffffff;
+    }
+
+    header img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    header h1 {
+        font-size: 20px;
+        margin-right: 60px;
+    }
+
+    header p{
+        font-size: 10px;
+    }
+/* Ocultar la barra de navegación por defecto */
+    nav {
+        display: none;
+    }
+
+    /* Mostrar la barra de navegación cuando se activa */
+    nav.active {
+        display: block;
+        top: 22%;
+        width: 100%;
+        background-color: #ffffff;
+        z-index: 1000;
+    }
+
+    nav ul {
+        text-align: left;
+        padding: 10px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    nav ul li a {
+        display: block;
+        padding: 10px;
+        border-bottom: 1px solid #10ffbf;
+        text-align: center;
+    }
+
+
+    .footer-logo img {
+        max-width: 20%;
+    }
+
+        /* Sección de proyectos y contacto */
+    .footer-columns {
+        justify-content: center; /* Centra las columnas horizontalmente */
+        text-align: center; /* Centra el texto dentro de cada columna */
+    }
+
+    .footer-columns section {
+        min-width: 200px;
+    }
+
+    .info {
+        padding: 15px; /* Reducir el padding para pantallas pequeñas */
+        margin: 10px auto; /* Espacio alrededor y centrado horizontalmente */
+        max-width: 100%; /* Ancho completo en pantallas pequeñas */
+    }
+
+    .info span {
+        font-size: 14px; /* Reducir el tamaño de fuente para pantallas más pequeñas */
+        margin-bottom: 8px; /* Espacio reducido entre los elementos */
+    }
+
+    .info a {
+        font-size: 14px; /* Reducir el tamaño de fuente del enlace */
+    }
+
+        
+    }
+
+
