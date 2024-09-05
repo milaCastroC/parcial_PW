@@ -1,3 +1,4 @@
+// Obtiene el elemento con el ID "year" del documento HTML y el año actual utilizando el objeto Date de JavaScript
 document.getElementById("year").innerHTML = new Date().getFullYear();
 
 // Selecciona el botón y la barra de navegación

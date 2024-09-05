@@ -1,131 +1,143 @@
 <!doctype HTML>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
-        <title>Clicker</title>
-        <link rel = "stylesheet" href = "../CSS/styleClicker.css">
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
-        <link href="https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=New+Amsterdam&family=Shadows+Into+Light&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=New+Amsterdam&family=Oswald:wght@200..700&family=Shadows+Into+Light&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=New+Amsterdam&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Shadows+Into+Light&display=swap"  rel="stylesheet">
-    
-    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clicker</title>
+    <link rel="stylesheet" href="../CSS/styleClicker.css"><!-- Enlace al archivo de estilos CSS -->
 
-    </head>
-    <body>
-        <header>
-            <img src="../Imagenes/Logotipo.png" alt="Logotipo" style="width: auto; max-height: 100px;" />
-            <div class="header-div" id="header-div">
-                <h1>Personal repo</h1>
-                <p>By: Camila Castro</p>
-            </div>
-             <!-- Botón para alternar la barra de navegación -->
-             <button class="menu-toggle" id="menu-toggle" hidden>
-                ☰
-            </button>
-        </header>
-    
-        <nav id = "nav-bar">
-            <ul>
-                <li><a href="indexHome.html">Home</a></li>
-                <li><a href="indexClicker.html" class = "active">Clicker</a></li>
-                <li><a href="indexCalculadora.html">Calculadora</a></li>
-                <li><a href="indexFormulario.html">Formulario</a></li>
-                <li><a href="indexGaleria.html">Galería</a></li>
-                <li><a href="indexToDo.html">To Do List</a></li>
-            </ul>
-        </nav>
-    
-        <div class = "content"> 
-            <div class = "container">
-                <h1>Contador de clicks</h1>
-                <span id = "contador">0</span>
-                <p id="record">Récord: 0</p>
-                <button id = "incrementar" class = "comand-btn">+</button>
-                <audio id = "incrementarSound" src="../Sonidos/incrementSound.mp3.mp3"></audio>
-                <button id = "reiniciar">Reiniciar</button>
-                <audio id = "reiniciarSound" src="../Sonidos/reinicioSound.mp3.mp3"></audio>
-                <button id = "decrementar" class = "comand-btn">-</button>
-                <audio id = "decrementarSound" src="../Sonidos/decrementSound.mp3.mp3"></audio>
-            </div>
+    <!-- Importación de fuentes desde Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=New+Amsterdam&family=Shadows+Into+Light&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=New+Amsterdam&family=Oswald:wght@200..700&family=Shadows+Into+Light&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=New+Amsterdam&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Shadows+Into+Light&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Encabezado de la página -->
+    <header>
+        <img src="../Imagenes/Logotipo.png" alt="Logotipo" style="width: auto; max-height: 100px;" />
+        <div class="header-div" id="header-div">
+            <h1>Personal repo</h1>
+            <p>By: Camila Castro</p>
         </div>
+        <!-- Botón para alternar la barra de navegación -->
+        <button class="menu-toggle" id="menu-toggle" hidden>
+            ☰
+        </button>
+    </header>
+    <!-- Barra de navegación principal-->
+    <nav id="nav-bar">
+        <ul>
+            <li><a href="indexHome.html">Home</a></li>
+            <li><a href="indexClicker.html" class="active">Clicker</a></li>
+            <li><a href="indexCalculadora.html">Calculadora</a></li>
+            <li><a href="indexFormulario.html">Formulario</a></li>
+            <li><a href="indexGaleria.html">Galería</a></li>
+            <li><a href="indexToDo.html">To Do List</a></li>
+        </ul>
+    </nav>
+    <!-- Contenido principal(Contador de clicks) -->
+    <div class="content">
+        <div class="container">
+            <h1>Contador de clicks</h1>
+            <span id="contador">0</span>
+            <p id="record">Récord: 0</p>
+            <button id="incrementar" class="comand-btn">+</button>
+            <audio id="incrementarSound" src="../Sonidos/incrementSound.mp3.mp3"></audio>
+            <button id="reiniciar">Reiniciar</button>
+            <audio id="reiniciarSound" src="../Sonidos/reinicioSound.mp3.mp3"></audio>
+            <button id="decrementar" class="comand-btn">-</button>
+            <audio id="decrementarSound" src="../Sonidos/decrementSound.mp3.mp3"></audio>
+        </div>
+    </div>
 
-        <footer>
-            <div class = "footer-wrapper">
-                <div class = "footer-columns">
-                    <section>
-                        <h3>Projects</h3>
-                        <ul>
-                            <li><a href="indexHome.html">Home</a></li>
-                            <li><a href="indexClicker.html">Clicker</a></li>
-                            <li><a href="indexCalculadora.html">Calculadora</a></li>
-                            <li><a href="indexFormulario.html">Formulario</a></li>
-                            <li><a href="indexGaleria.html">Galería</a></li>
-                            <li><a href="indexToDo.html">To Do List</a></li>
-                        </ul>
-                    </section>
-                    <section class = "footer-logo">
-                        <img src = "../Imagenes/Logotipo.png" alt = "Logotipo" />
-                    </section>
-                    <section>
-                        <h3>Contact Me</h3>
-                            <div class = "social-bottom">
-                                <div class = "social-links">
-                                    <ul>
-                                        <li>
-                                            <a href = "mailto: castro.maria.5191@eam.edu.co" title = "Email" target="_blank">
-                                                <img src = "../Imagenes/gmail.svg" alt = "Email" />
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href = "https://www.linkedin.com/in/maria-camila-castro-cardona-8733b3265" title = "LinkedIn" target="_blank">
-                                                <img src = "../Imagenes/linkedin.svg" alt = "LinkedIn" />
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href = "https://github.com/milaCastroC" title = "GitHub" target="_blank">
-                                                <img src = "../Imagenes/github.svg" alt = "GitHub" />
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href = "https://www.instagram.com/mila_castro_c/" title = "Instagram" target="_blank">
-                                                <img src = "../Imagenes/instagram.svg" alt = "Instagram" />
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href = "https://www.facebook.com/mariacamila.castrocardona?mibextid=LQQJ4d" title = "Facebook" target="_blank">
-                                                <img src = "../Imagenes/facebook.svg" alt = "Facebook" />
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class = "info" id = "info">
-                                <address>
-                                    <span>Maria Camila Castro Cardona</span>
-                                    <a href = "mailto: castro.maria.5191@eam.edu.co" title = "Email" target="_blank">castro.maria.5191@eam.edu.co</a>
-                                    <span>Cel: 3014181032</span>
-                                </address>
-                            </div>
-                    </section>
-                        <div class = "footer-bottom">
-                            <div class = "footer-bottom-wrapper">
-                                <small>
-                                    © Institucion universitaria EAM
-                                    <span id = "year"></span>, All rights reserved
-                                </small>
-                            </div>
+    <!--Sección del footer-->
+    <footer>
+        <div class="footer-wrapper">
+            <div class="footer-columns">
+                <section>
+                    <h3>Projects</h3>
+                    <ul>
+                        <li><a href="indexHome.html">Home</a></li>
+                        <li><a href="indexClicker.html">Clicker</a></li>
+                        <li><a href="indexCalculadora.html">Calculadora</a></li>
+                        <li><a href="indexFormulario.html">Formulario</a></li>
+                        <li><a href="indexGaleria.html">Galería</a></li>
+                        <li><a href="indexToDo.html">To Do List</a></li>
+                    </ul>
+                </section>
+                <section class="footer-logo">
+                    <img src="../Imagenes/Logotipo.png" alt="Logotipo" />
+                </section>
+                <section>
+                    <h3>Contact Me</h3>
+                    <div class="social-bottom">
+                        <div class="social-links">
+                            <ul>
+                                <li>
+                                    <a href="mailto: castro.maria.5191@eam.edu.co" title="Email" target="_blank">
+                                        <img src="../Imagenes/gmail.svg" alt="Email" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.linkedin.com/in/maria-camila-castro-cardona-8733b3265"
+                                        title="LinkedIn" target="_blank">
+                                        <img src="../Imagenes/linkedin.svg" alt="LinkedIn" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://github.com/milaCastroC" title="GitHub" target="_blank">
+                                        <img src="../Imagenes/github.svg" alt="GitHub" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/mila_castro_c/" title="Instagram"
+                                        target="_blank">
+                                        <img src="../Imagenes/instagram.svg" alt="Instagram" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.facebook.com/mariacamila.castrocardona?mibextid=LQQJ4d"
+                                        title="Facebook" target="_blank">
+                                        <img src="../Imagenes/facebook.svg" alt="Facebook" />
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
+                    </div>
+                    <div class="info" id="info">
+                        <address>
+                            <span>Maria Camila Castro Cardona</span>
+                            <a href="mailto: castro.maria.5191@eam.edu.co" title="Email"
+                                target="_blank">castro.maria.5191@eam.edu.co</a>
+                            <span>Cel: 3014181032</span>
+                        </address>
+                    </div>
+                </section>
+                <div class="footer-bottom">
+                    <div class="footer-bottom-wrapper">
+                        <small>
+                            © Institucion universitaria EAM
+                            <span id="year"></span>, All rights reserved
+                        </small>
+                    </div>
                 </div>
             </div>
-        </footer>
-    </body>
+        </div>
+    </footer>
+</body>
 
-    <script src = "../JS/scriptClicker.js"> </script>
+<!-- Enlace al archivo de JavaScript-->
+<script src="../JS/scriptClicker.js"> </script>
 
 </html>

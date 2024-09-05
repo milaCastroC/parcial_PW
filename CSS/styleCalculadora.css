@@ -1,173 +1,172 @@
-/* Header */
-header {
-    background-color: #000000;
-    color: #ffffff;
-    padding: 20px;
-    text-align: center;
+/* Estilos para el body en la página de la calculadora */
+body {
+    font-family: Arial, sans-serif; /* Define la fuente de texto para el body */
+    background-color: var(--body-bg-color, #f4f4f4); /* Establece el color de fondo; usa una variable CSS o un valor por defecto */
+    margin: 0; /* Elimina los márgenes predeterminados del body */
+    justify-content: center; /* Centra los elementos secundarios horizontalmente (cuando se usa con flexbox) */
+    align-items: center; /* Centra los elementos secundarios verticalmente (cuando se usa con flexbox) */
+    width: 100%; /* Hace que el body ocupe el ancho completo del contenedor */
 }
 
-.header-div{
-    display: inline-block;
+/* Header */
+header {
+    background-color: #000000; /* Color de fondo negro para el header */
+    color: #ffffff; /* Color del texto blanco para contraste */
+    padding: 20px; /* Espaciado interior en el header */
+    text-align: center; /* Centra el texto dentro del header */
+}
+
+.header-div {
+    display: inline-block; /* Muestra el div como un bloque en línea para alineación horizontal */
 }
 
 header img {
-    max-width: 7%;
-    height: auto;
+    max-width: 7%; /* Tamaño máximo de la imagen en el header */
+    height: auto; /* Mantiene la proporción de la imagen */
 }
 
 header h1 {
-    margin: 0;
-    font-family:  "New Amsterdam", sans-serif;
-    color: #ffffff;
+    margin: 0; /* Elimina el margen alrededor del título */
+    font-family: "New Amsterdam", sans-serif; /* Fuente personalizada para el título */
+    color: #ffffff; /* Color del texto blanco para el título */
 }
 
 header p {
-    font-size: 100%;
-    font-family: "Shadows Into Light", cursive;
-    font-weight: bold;
-    padding: 0;
-    margin: 0;
+    font-size: 100%; /* Tamaño de fuente del párrafo en relación al tamaño base del texto */
+    font-family: "Shadows Into Light", cursive; /* Fuente cursiva para el párrafo */
+    font-weight: bold; /* Aplica negrita al texto del párrafo */
+    padding: 0; /* Elimina el padding del párrafo */
+    margin: 0; /* Elimina el margen alrededor del párrafo */
 }
 
 /* Navegación */
 nav {
-    background: linear-gradient(45deg, #ffffff, #10ffbf);
-    padding: 10px 0;
-    font-family: "Oswald", sans-serif;
-    font-size: 20px;
+    background: linear-gradient(45deg, #ffffff, #10ffbf); /* Gradiente de fondo para la barra de navegación */
+    padding: 10px 0; /* Espaciado interior en la barra de navegación */
+    font-family: "Oswald", sans-serif; /* Fuente personalizada para la barra de navegación */
+    font-size: 20px; /* Tamaño de fuente para los elementos de navegación */
 }
 
 nav ul {
-    list-style: none;
-    text-align: center;
+    list-style: none; /* Elimina los puntos de la lista */
+    text-align: center; /* Centra el texto dentro de la lista */
 }
 
 nav ul li {
-    display: inline-block;
-    margin: 0 15px;
+    display: inline-block; /* Muestra cada ítem de la lista en línea */
+    margin: 0 15px; /* Espacio horizontal entre los ítems de la lista */
 }
 
 nav ul li a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-    padding: 5px 10px;
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: #333; /* Color del texto de los enlaces */
+    font-weight: bold; /* Aplica negrita al texto del enlace */
+    padding: 5px 10px; /* Espaciado interior en los enlaces */
 }
 
 nav ul li a.active {
-    color: #10ffbf;
-    background-color: #333;
-    border-radius: 5px;
-    padding: 5px 15px;
+    color: #10ffbf; /* Color del texto para el enlace activo */
+    background-color: #333; /* Color de fondo para el enlace activo */
+    border-radius: 5px; /* Bordes redondeados en el enlace activo */
+    padding: 5px 15px; /* Espaciado interior adicional para el enlace activo */
 }
 
 /* Estilos para el botón de alternar la barra lateral */
 .toggle-btn {
-    background-color:#000000; /* Color de fondo */
-    color: white; /* Color del texto */
-    padding: 10px; /* Espaciado interno */
-    cursor: pointer; /* Cursor en forma de mano*/
-    font-size: 15px; /* Tamaño de la fuente */
-    border-radius: 5px; /* Bordes redondeados */
-    width: 100%; /* Ancho del botón */
-    text-align: center; /* Alinear el texto a la izquierda */
+    background-color: #000000; /* Color de fondo negro para el botón */
+    color: white; /* Color del texto blanco para contraste */
+    padding: 10px; /* Espaciado interno para el botón */
+    cursor: pointer; /* Muestra un cursor de mano cuando se pasa sobre el botón */
+    font-size: 15px; /* Tamaño de la fuente en el botón */
+    border-radius: 5px; /* Bordes redondeados en el botón */
+    width: 100%; /* Ancho del botón igual al contenedor */
+    text-align: center; /* Centra el texto dentro del botón */
 }
 
 .toggle-btn:hover {
-    background-color: #444; /*Color de fondo cuando se pasa el cursor encima*/
+    background-color: #444; /* Color de fondo gris oscuro cuando se pasa el cursor sobre el botón */
 }
 
 .toggle-btn.minimized {
-    text-align: center; /* Cambiar alineación del texto cuando el sidebar está minimizado */
-    font-size: 12px; /* Reducir el tamaño de la fuente para que se ajuste al espacio reducido */
+    text-align: center; /* Centra el texto cuando la barra lateral está minimizada */
+    font-size: 12px; /* Reduce el tamaño de la fuente cuando la barra lateral está minimizada */
 }
 
 /* Estilos para la barra lateral */
 .sidebar {
-    top: 0;/*Espacio arriba*/
-    left: 0;/*Espacio abajo*/
-    background-color:#ffff; /* Color de fondo */
-    width: 20%; /* Ancho de la barra lateral*/
-    padding: 15px; /* Espaciado interno */
-     transition: width 0.5s ease; /*Transición*/
-
- }
-
- .calculadora-container{
-    display: flex;
-    height: 100%;
- }
-
- /*Estilo para la barra lateral minimizada*/
- .sidebar.minimized {
-    width: 10%; /* Reducir el ancho del sidebar */
-    padding: 10px; /* Reducir el espaciado interno */
-    background-color: #ffff; /* Mantén el color de fondo */
-    transition: width 0.5s ease; /*Transición*/
+    top: 0; /* Posiciona la barra lateral en la parte superior */
+    left: 0; /* Posiciona la barra lateral a la izquierda */
+    background-color: #ffff; /* Color de fondo blanco para la barra lateral */
+    width: 20%; /* Ancho inicial de la barra lateral */
+    padding: 15px; /* Espaciado interno dentro de la barra lateral */
+    transition: width 0.5s ease; /* Transición suave para el cambio de ancho */
 }
 
-.sidebar.minimized .color-btn,.sidebar.minimized h2 {
-    display: none; /* Oculta los botones de cambio de color y el título */
+.calculadora-container {
+    display: flex; /* Usa flexbox para alinear elementos */
+    height: 100%; /* Altura completa del contenedor */
+}
+
+/* Estilo para la barra lateral minimizada */
+.sidebar.minimized {
+    width: 10%; /* Reduce el ancho de la barra lateral cuando está minimizada */
+    padding: 10px; /* Reduce el espaciado interno cuando está minimizada */
+    background-color: #ffff; /* Mantiene el color de fondo blanco */
+    transition: width 0.5s ease; /* Transición suave para el cambio de ancho */
+}
+
+.sidebar.minimized .color-btn, .sidebar.minimized h2 {
+    display: none; /* Oculta los botones de cambio de color y el título cuando está minimizada */
 }
 
 /* Estilos para la lista de opciones en la barra lateral */
 .sidebar ul {
-    list-style-type: none; /* Eliminar numerado de la lista */
-    padding: 0; /* Eliminar espaciado interno */
-    transition: width 0.5s ease, margin-right 0.5s ease, padding 0.5s ease;
+    list-style-type: none; /* Elimina los puntos de la lista */
+    padding: 0; /* Elimina el espaciado interno de la lista */
+    transition: width 0.5s ease, margin-right 0.5s ease, padding 0.5s ease; /* Transición suave para cambios en el ancho, margen y espaciado */
 }
 
 /* Estilos para los elementos de la lista en la barra lateral */
 .sidebar ul il {
-    margin-bottom: 5px; /* Espaciado inferior entre elementos */
+    margin-bottom: 5px; /* Espaciado inferior entre elementos de la lista (nota: debería ser 'li' en lugar de 'il') */
 }
 
 /* Estilos para los títulos en la barra lateral */
 .sidebar h2 {
-    font-size: 28px; /* Tamaño de la fuente*/
-    font-family: fantasy; /* Fuente*/
+    font-size: 28px; /* Tamaño de la fuente para los títulos en la barra lateral */
+    font-family: fantasy; /* Fuente tipo fantasía para los títulos */
 }
 
 /* Estilos para los botones de color en la barra lateral */
 .color-btn {
-    width: 100%; /* Ancho del botón */
-    font-size: 15px; /* Tamaño de la fuente */
-    cursor: pointer; /* Cursor en forma de mano*/
-    border-radius: 9px; /* Bordes redondeados */
-    text-align: left; /* Alinear el texto a la izquierda */
-    background-color: white; /* Color de fondo */
-    margin-bottom: 20px; /* Espaciado inferior entre botones */
+    width: 100%; /* Ancho completo del botón */
+    font-size: 15px; /* Tamaño de la fuente en el botón */
+    cursor: pointer; /* Muestra un cursor de mano cuando se pasa sobre el botón */
+    border-radius: 9px; /* Bordes redondeados en el botón */
+    text-align: left; /* Alinea el texto a la izquierda dentro del botón */
+    background-color: white; /* Color de fondo blanco para el botón */
+    margin-bottom: 20px; /* Espaciado inferior entre los botones */
 }
 
-/* Estilos para los botones de color cuando el mouse pasa sobre ellos*/
+/* Estilos para los botones de color cuando el mouse pasa sobre ellos */
 .color-btn:hover[data-theme="green"] {
-    background-color: #d5f5ce; /* Color de fondo para el tema verde */
+    background-color: #d5f5ce; /* Color de fondo verde claro para el tema verde */
 }
 
 .color-btn:hover[data-theme="yellow"] {
-    background-color: #fffbc9; /* Color de fondo para el tema amarillo */
+    background-color: #fffbc9; /* Color de fondo amarillo claro para el tema amarillo */
 }
 
 .color-btn:hover[data-theme="pink"] {
-    background-color: #fcd2f7; /* Color de fondo para el tema rosado */
+    background-color: #fcd2f7; /* Color de fondo rosa claro para el tema rosado */
 }
 
 .color-btn:hover[data-theme="blue"] {
-    background-color: #dbf2ff; /* Color de fondo para el tema azul */
+    background-color: #dbf2ff; /* Color de fondo azul claro para el tema azul */
 }
 
 .color-btn:hover[data-theme="reset"] {
-    background-color: #d7d7d7; /* Color de fondo para el tema reset */
-}
-
-/* Estilos para la calculadora */
-body {
-    font-family: Arial, sans-serif; /* Fuente para el body*/
-    background-color: var(--body-bg-color, #f4f4f4); /* Color de fondo */
-    margin: 0; /* Eliminar márgenes*/
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+    background-color: #d7d7d7; /* Color de fondo gris claro para el tema reset */
 }
 
 /* Estilos para el contenedor de la calculadora */
@@ -245,98 +244,97 @@ body {
 footer {
     background-color: #333; /* Color de fondo oscuro para el footer */
     color: #fff; /* Color de texto blanco para contraste */
-    padding: 40px 20px;
-    font-family: "Open Sans", sans-serif;
-    position: relative; /* Asegura que el footer se ajuste al contenido */
-    text-align: center; /* Centra el texto dentro de cada columna */
+    padding: 40px 20px; /* Espaciado interno del footer */
+    font-family: "Open Sans", sans-serif; /* Fuente del texto en el footer */
+    position: relative; /* Asegura que el footer se ajuste al contenido y permita posicionar elementos relativos */
+    text-align: center; /* Centra el texto dentro del footer */
 }
 
 /* Columnas del footer */
 .footer-columns {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center; /* Centra las columnas horizontalmente */
-    margin-bottom: 60px; /* Espacio para el footer inferior */
+    display: flex; /* Usa flexbox para disposición de las columnas */
+    flex-wrap: wrap; /* Permite que las columnas se envuelvan en varias filas si es necesario */
+    gap: 20px; /* Espacio entre las columnas */
+    justify-content: center; /* Centra las columnas horizontalmente en el contenedor */
+    margin-bottom: 60px; /* Espacio en la parte inferior del footer */
 }
 
 /* Logo en el footer */
 .footer-logo {
-    flex: 1;
-    text-align: center;
+    flex: 1; /* Permite que el logo ocupe espacio flexible en el contenedor */
+    text-align: center; /* Centra el logo horizontalmente */
 }
 
 .footer-logo img {
-    max-width: 150px; /* Ajusta el tamaño del logotipo */
-    height: auto;
+    max-width: 150px; /* Establece el ancho máximo del logotipo */
+    height: auto; /* Ajusta la altura automáticamente para mantener la proporción */
 }
 
 /* Sección de proyectos y contacto */
 .footer-columns section {
-    flex: 1;
-    min-width: 200px;
-    padding-bottom: 5%;
+    flex: 1; /* Permite que las secciones ocupen espacio flexible */
+    min-width: 200px; /* Ancho mínimo para cada sección */
+    padding-bottom: 5%; /* Espaciado inferior dentro de cada sección */
 }
 
 .footer-columns h3 {
-    font-family: "Oswald", sans-serif;
-    font-size: 24px; /* Ajuste el tamaño de la fuente */
-    margin-bottom: 10px;
+    font-family: "Oswald", sans-serif; /* Fuente para los títulos de las secciones */
+    font-size: 24px; /* Tamaño de la fuente para los títulos */
+    margin-bottom: 10px; /* Espacio debajo de los títulos */
 }
 
 .footer-columns ul {
-    list-style: none;
-    padding: 0;
+    list-style: none; /* Elimina los puntos de la lista */
+    padding: 0; /* Elimina el espaciado interno de la lista */
 }
 
 .footer-columns ul li {
-    margin-bottom: 10px;
+    margin-bottom: 10px; /* Espacio inferior entre los elementos de la lista */
 }
 
 .footer-columns ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: bold;
+    color: #fff; /* Color del texto de los enlaces */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    font-size: 16px; /* Tamaño de la fuente para los enlaces */
+    font-weight: bold; /* Negrita para resaltar los enlaces */
 }
 
 .footer-columns ul li a:hover {
-    color: #10ffbf; /* Color del enlace al pasar el ratón */
+    color: #10ffbf; /* Color del enlace cuando se pasa el ratón por encima */
 }
 
 /* Redes sociales */
 .social-links ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    gap: 15px;
-    justify-content: center;
+    list-style: none; /* Elimina los puntos de la lista de redes sociales */
+    padding: 0; /* Elimina el espaciado interno de la lista */
+    display: flex; /* Usa flexbox para alinear los íconos de redes sociales */
+    gap: 15px; /* Espacio entre los íconos */
+    justify-content: center; /* Centra los íconos horizontalmente */
 }
 
 .social-links img {
-    width: 30px; /* Ajuste el tamaño de los iconos */
-    height: 30px;
-    transition: opacity 0.3s ease;
-    filter: invert(1);
+    width: 30px; /* Ancho de los íconos de redes sociales */
+    height: 30px; /* Altura de los íconos de redes sociales */
+    transition: opacity 0.3s ease; /* Transición suave para el cambio de opacidad */
+    filter: invert(1); /* Invierte los colores del ícono para adaptarse al fondo oscuro */
 }
 
 .social-links img:hover {
-    opacity: 0.8; /* Efecto de opacidad en las redes sociales al pasar el ratón */
+    opacity: 0.8; /* Efecto de opacidad en los íconos al pasar el ratón por encima */
 }
 
 /* Estilos para la sección de información de contacto */
 .info {
     color: #fff; /* Color de texto blanco para contraste */
-    padding: 20px;
-    text-align: left; /* Alinea el texto a la izquierda */
+    padding: 20px; /* Espaciado interno para la sección de contacto */
+    text-align: left; /* Alinea el texto a la izquierda dentro de la sección */
     margin: 20px auto; /* Espacio alrededor y centrado horizontalmente */
     max-width: 400px; /* Ancho máximo para la sección de contacto */
-    text-align: center;
 }
 
 .info address {
     font-style: normal; /* Elimina el estilo itálico predeterminado de <address> */
-    font-family: "Open Sans", sans-serif;
+    font-family: "Open Sans", sans-serif; /* Fuente para la información de contacto */
 }
 
 .info span {
@@ -344,136 +342,149 @@ footer {
 }
 
 .info a {
-    color: #10ffbf; /* Color del enlace */
-    text-decoration: none; /* Elimina el subrayado del enlace */
+    color: #10ffbf; /* Color del enlace en la sección de contacto */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
     font-weight: bold; /* Negrita para resaltar el enlace */
 }
 
 .info a:hover {
-    text-decoration: underline; /* Subrayado al pasar el ratón para mejor visibilidad */
+    text-decoration: underline; /* Subrayado del enlace al pasar el ratón por encima */
 }
 
 /* Parte inferior del footer */
 .footer-bottom {
-    background-color: #10ffbf;
-    padding: 20px 0;
-    text-align: center;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+    background-color: #10ffbf; /* Color de fondo para la parte inferior del footer */
+    padding: 20px 0; /* Espaciado interno en la parte superior e inferior */
+    text-align: center; /* Centra el texto dentro de la parte inferior del footer */
+    position: absolute; /* Posiciona la parte inferior en la parte inferior del contenedor */
+    bottom: 0; /* Coloca la parte inferior al fondo del contenedor */
+    width: 100%; /* Ancho completo del footer */
 }
 
-/* Estilos generales para dispositivos móviles */
+/* Estilos específicos para dispositivos pequeños (máximo 768px de ancho) */
 @media only screen and (max-width: 768px) {
-    /* Ajustar el tamaño de la barra lateral en pantallas pequeñas */
-    .sidebar {
-        width: 80%; /* Ancho del sidebar */
-        top: 0; /* Distancia arriba */
-        left: -100%; /* Mantener fuera de la vista inicialmente */
-        transition: width 0.5s ease; /* Transición suave para el desplazamiento */
-        z-index: 1000;
-    }
-
-    /* Mostrar la barra lateral cuando esté activa */
-    .sidebar.show {
-        left: 0; /* Mostrar la barra lateral */
-        width: 250px; /* Ajustar el ancho del sidebar según sea necesario */
-    }
-
-    /* Ajustar la calculadora cuando la barra lateral está visible */
-    .calculator {
-        width: 100%; /* Ajustar el ancho para dejar espacio al sidebar */
-        height: 100%;
-        transition: margin-left 0.3s ease; /* Transición suave para el margen */
-        z-index: 500;
-    }
-
-    /* Mover la calculadora a la derecha cuando la barra lateral está activa */
-    .calculator.show {
-        margin-left: 250px; /* Mover la calculadora para dar espacio al sidebar cuando esté visible */
-    }
-
-    /* Mostrar el botón de alternar */
-    .toggle-btn {
-        display: block; /* Mostrar el botón de alternar */
-    }
-
-    .calculator.minimized {
-        margin-left: 5%;
-        margin-right: 5%;
-    }
-    
     /* Mostrar el botón de menú */
     .menu-toggle {
-        display: inline-block;
-        background: none;
-        border: none;
-        font-size: 30px;
-        cursor: pointer;
-        font-weight: bold;
-        color: #ffffff;
+        display: inline-block; /* Mostrar el botón de menú */
+        background: none; /* Sin fondo */
+        border: none; /* Sin borde */
+        font-size: 30px; /* Tamaño de fuente grande para el botón de menú */
+        cursor: pointer; /* Cursor en forma de mano al pasar sobre el botón */
+        font-weight: bold; /* Texto en negrita */
+        color: #ffffff; /* Color del texto del botón */
     }
 
+    /* Ajustar el tamaño de la imagen del encabezado */
     header img {
-        max-width: 100%;
-        height: auto;
+        max-width: 100%; /* Ancho máximo del 100% del contenedor */
+        height: auto; /* Ajustar la altura automáticamente para mantener la proporción */
     }
 
+    /* Ajustar el tamaño del título del encabezado */
     header h1 {
-        font-size: 20px;
-        margin-right: 60px;
+        font-size: 20px; /* Tamaño de fuente más pequeño para pantallas pequeñas */
+        margin-right: 60px; /* Espacio a la derecha del título */
     }
 
+    /* Ajustar el tamaño del párrafo del encabezado */
     header p {
-        font-size: 10px;
+        font-size: 10px; /* Tamaño de fuente más pequeño para el párrafo */
     }
 
     /* Ocultar la barra de navegación por defecto */
     nav {
-        display: none;
-        z-index: 1500;
+        display: none; /* Ocultar la barra de navegación en pantallas pequeñas */
+        z-index: 1500; /* Asegura que la barra de navegación esté por encima de otros elementos cuando se muestre */
     }
 
     /* Mostrar la barra de navegación cuando se activa */
     nav.active {
-        display: block;
-        top: 22%;
-        width: 100%;
-        background-color: #ffffff;
-        z-index: 1500;
+        display: block; /* Mostrar la barra de navegación cuando esté activa */
+        top: 22%; /* Posicionar la barra de navegación desde la parte superior */
+        width: 100%; /* Ancho completo del contenedor */
+        background-color: #ffffff; /* Color de fondo blanco para la barra de navegación activa */
+        z-index: 1500; /* Asegura que la barra de navegación esté por encima de otros elementos */
     }
 
+    /* Ajustar la alineación y el espaciado de los elementos de la barra de navegación */
     nav ul {
-        text-align: left;
-        padding: 10px;
+        text-align: left; /* Alinear el texto a la izquierda */
+        padding: 10px; /* Espaciado interno */
     }
 
     nav ul li {
-        display: block;
-        margin: 10px 0;
+        display: block; /* Mostrar cada elemento en bloque */
+        margin: 10px 0; /* Espacio arriba y abajo de cada elemento */
     }
 
     nav ul li a {
-        display: block;
-        padding: 10px;
-        border-bottom: 1px solid #10ffbf;
-        text-align: center;
+        display: block; /* Mostrar cada enlace en bloque */
+        padding: 10px; /* Espaciado interno de los enlaces */
+        border-bottom: 1px solid #10ffbf; /* Línea inferior para separar los enlaces */
+        text-align: center; /* Centrar el texto dentro del enlace */
     }
 
+    /* Ajustar el tamaño de la barra lateral en pantallas pequeñas */
+    .sidebar {
+        width: 80%; /* Ancho del sidebar en pantallas pequeñas */
+        top: 0; /* Mantener el sidebar en la parte superior */
+        left: -100%; /* Mantener el sidebar fuera de la vista inicialmente */
+        transition: width 0.5s ease; /* Transición suave para el cambio de ancho */
+        z-index: 1000; /* Asegura que el sidebar esté por encima de otros elementos */
+    }
+
+    /* Mostrar la barra lateral cuando esté activa */
+    .sidebar.show {
+        left: 0; /* Mostrar el sidebar cuando esté activo */
+        width: 250px; /* Ajustar el ancho del sidebar cuando esté activo */
+    }
+
+    /* Ajustar la calculadora cuando la barra lateral está visible */
+    .calculator {
+        width: 100%; /* Ajustar el ancho para que ocupe el espacio disponible */
+        height: 100%; /* Mantener la altura completa */
+        transition: margin-left 0.3s ease; /* Transición suave para el margen izquierdo */
+        z-index: 500; /* Asegura que la calculadora esté por debajo del sidebar */
+    }
+
+    /* Mover la calculadora a la derecha cuando la barra lateral está activa */
+    .calculator.show {
+        margin-left: 250px; /* Mover la calculadora hacia la derecha para hacer espacio al sidebar */
+    }
+
+    /* Mostrar el botón de alternar */
+    .toggle-btn {
+        display: block; /* Mostrar el botón de alternar en pantallas pequeñas */
+    }
+
+    /* Ajustar el tamaño de la calculadora minimizada */
+    .calculator.minimized {
+        margin-left: 5%; /* Reducir el margen izquierdo para la calculadora minimizada */
+        margin-right: 5%; /* Reducir el margen derecho para la calculadora minimizada */
+    }
+
+    /* Ajustar el contenedor de la calculadora para pantallas pequeñas */
+    .calculadora-container {
+        width: 100%; /* Mantener el ancho completo */
+        overflow: hidden; /* Ocultar el contenido que se desborda */
+    }
+
+    /* Ajustar el tamaño del logotipo en el footer */
     .footer-logo img {
-        max-width: 20%;
+        max-width: 20%; /* Ancho máximo del logotipo */
     }
 
-    /* Sección de proyectos y contacto */
+    /* Ajustar la disposición de las columnas en el footer */
     .footer-columns {
         justify-content: center; /* Centra las columnas horizontalmente */
         text-align: center; /* Centra el texto dentro de cada columna */
     }
 
     .footer-columns section {
-        min-width: 200px;
+        min-width: 200px; /* Ancho mínimo para cada sección */
     }
 
+    /* Ajustar la sección de información de contacto */
     .info {
         padding: 15px; /* Reducir el padding para pantallas pequeñas */
         margin: 10px auto; /* Espacio alrededor y centrado horizontalmente */
@@ -489,9 +500,4 @@ footer {
         font-size: 14px; /* Reducir el tamaño de fuente del enlace */
     }
 
-    /* Evitar que el contenedor de la calculadora se agrande */
-    .calculadora-container {
-        width: 100%; /* Mantener el ancho completo */
-        overflow: hidden; /* Ocultar el contenido que se desborda */
-    }
 }

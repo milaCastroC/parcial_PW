@@ -1,3 +1,4 @@
+// Obtiene el elemento con el ID "year" del documento HTML y el año actual utilizando el objeto Date de JavaScript
 document.getElementById("year").innerHTML = new Date().getFullYear();
 
 // Selecciona el botón y la barra de navegación
@@ -5,7 +6,7 @@ const menuToggle = document.getElementById('menu-toggle');
 const navBar = document.getElementById('nav-bar');
 
 // Añade un evento de clic al botón
-menuToggle.addEventListener('click', function() {
+menuToggle.addEventListener('click', function () {
     // Alterna la clase 'active' en el navBar para mostrar/ocultar
     navBar.classList.toggle('active');
 });
@@ -57,9 +58,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // Función para agregar una nueva tarea
     function addTask() {
         const taskText = newTaskInput.value.trim(); // Obtener el texto de la nueva tarea
-        if (taskText === ''){
+        if (taskText === '') {
             return; // Si el campo está vacío, no hacer nada
-        }  
+        }
 
         const taskElement = createTaskElement(taskText); // Crear el elemento de tarea
         pendingTaskList.appendChild(taskElement); // Añadir la tarea a la lista de pendientes
@@ -88,17 +89,17 @@ document.addEventListener('DOMContentLoaded', () => {
     function saveTasks() {
         const pendingTasks = []; // Array para almacenar las tareas pendientes
         const completedTasks = []; // Array para almacenar las tareas completadas
-    
+
         // Recorrer todas las tareas pendientes y guardarlas en el array pendingTasks
         pendingTaskList.querySelectorAll('li').forEach(task => {
             pendingTasks.push(task.querySelector('.task-text').textContent); // Extrae el texto de cada tarea pendiente y lo agrega al array
         });
-    
+
         // Recorrer todas las tareas completadas y guardarlas en el array completedTasks
         completedTaskList.querySelectorAll('li').forEach(task => {
             completedTasks.push(task.querySelector('.task-text').textContent); // Extrae el texto de cada tarea completada y lo agrega al array
         });
-    
+
         // Guardar ambos arrays en el localStorage
         localStorage.setItem('pendingTasks', JSON.stringify(pendingTasks)); // Convierte el array pendingTasks a JSON y lo guarda en localStorage
         localStorage.setItem('completedTasks', JSON.stringify(completedTasks)); // Convierte el array completedTasks a JSON y lo guarda en localStorage
@@ -106,21 +107,21 @@ document.addEventListener('DOMContentLoaded', () => {
     function loadTasks() {
         // Obtener las tareas pendientes desde el localStorage y convertirlas de JSON a un array. Si no hay tareas, usar un array vacío.
         const pendingTasks = JSON.parse(localStorage.getItem('pendingTasks')) || [];
-        
+
         // Obtener las tareas completadas desde el localStorage y convertirlas de JSON a un array. Si no hay tareas, usar un array vacío.
         const completedTasks = JSON.parse(localStorage.getItem('completedTasks')) || [];
-    
+
         // Crear elementos de tarea para cada tarea pendiente
         pendingTasks.forEach(taskText => {
             const taskElement = createTaskElement(taskText); // Crear un elemento de tarea utilizando el texto de la tarea pendiente
             pendingTaskList.appendChild(taskElement);// Agregar el elemento de tarea a la lista de tareas pendientes
         });
-    
+
         // Crear elementos de tarea para cada tarea completada
         completedTasks.forEach(taskText => {
             // Crear un elemento de tarea utilizando el texto de la tarea completada y marcando la tarea como completada
             const taskElement = createTaskElement(taskText, true);
-            
+
             // Agregar el elemento de tarea a la lista de tareas completadas
             completedTaskList.appendChild(taskElement);
         });

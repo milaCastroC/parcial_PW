@@ -1,191 +1,219 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario de reserva</title>
     <link rel="stylesheet" href="../CSS/styleFormulario.css"> <!-- Enlace al archivo de estilos CSS -->
 
+    <!-- Importación de fuentes desde Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link href="https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=New+Amsterdam&family=Shadows+Into+Light&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=New+Amsterdam&family=Oswald:wght@200..700&family=Shadows+Into+Light&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=New+Amsterdam&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Shadows+Into+Light&display=swap"  rel="stylesheet">
-
-
+    <link href="https://fonts.googleapis.com/css2?family=New+Amsterdam&family=Shadows+Into+Light&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=New+Amsterdam&family=Oswald:wght@200..700&family=Shadows+Into+Light&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=New+Amsterdam&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Shadows+Into+Light&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-    <header>
-        <img src="../Imagenes/Logotipo.png" alt="Logotipo" style="width: auto; max-height: 100px;" />
-        <div class="header-div" id="header-div">
-            <h1>Personal repo</h1>
-            <p>By: Camila Castro</p>
-        </div>
-         <!-- Botón para alternar la barra de navegación -->
-         <button class="menu-toggle" id="menu-toggle" hidden>
-            ☰
-        </button>
-    </header>
-
-    <nav id = "nav-bar">
-        <ul>
-            <li><a href="indexHome.html">Home</a></li>
-            <li><a href="indexClicker.html">Clicker</a></li>
-            <li><a href="indexCalculadora.html">Calculadora</a></li>
-            <li><a href="indexFormulario.html" class = "active">Formulario</a></li>
-            <li><a href="indexGaleria.html">Galería</a></li>
-            <li><a href="indexToDo.html">To Do List</a></li>
-        </ul>
-    </nav>
-
-    <div class="container"> <!-- Contenedor principal del formulario -->
-        <h1>Hotel Encanto del Bosque</h1>
-        <form class="form" onsubmit="return validarFormulario(event)"> <!-- Formulario con validación en el envío -->
-            <fieldset> <!-- Agrupación de campos de información personal -->
-                <legend>Información Personal</legend> 
-
-                <label for="nombre">Nombre completo:</label> 
-                <input type="text" id="nombre" name="nombre" autocomplete="name" required> <!-- Campo de texto para nombre-->
-
-                <label for="tipoID">Tipo de documento:</label> 
-                <select id="tipoID" name="tipoID" required autocomplete="off"> <!-- Lista desplegable para seleccionar el tipo de documento -->
-                    <option value="CC">Cédula de Ciudadanía</option>
-                    <option value="CE">Cédula de Extranjería</option>
-                    <option value="Pasaporte">Pasaporte</option>
-                    <option value="NIT">NIT</option>
-                </select>
-
-                <label for="id">Número de documento:</label> 
-                <input type="text" id="id" name="id" autocomplete="id" required> <!-- Campo de texto para el número de documento  -->
-
-                <label for="pdfID">Sube tu documento de identidad en PDF:</label> 
-                <input type="file" name="pdfID" id="pdfID" accept=".pdf" required> <!-- Campo de archivo para subir un PDF con documento de identidad -->
-
-                <label for="fecha">Fecha de Nacimiento:</label> 
-                <input type="date" id="fecha" name="fecha" autocomplete="bday" required> <!-- Campo de fecha para fecha de nacimiento  -->
-
-                <label for="email">Correo electrónico:</label> 
-                <input type="email" id="email" name="email" autocomplete="email" required> <!-- Campo de texto para correo electrónico  -->
-
-                <label for="telefono">Teléfono de contacto:</label> 
-                <input type="tel" id="telefono" name="telefono" autocomplete="tel" required> <!-- Campo de texto para número de teléfono  -->
-            </fieldset>
-
-            <fieldset> <!-- Agrupa campos de detalles de la reserva -->
-                <legend>Detalles de la reserva</legend> 
-
-                <label for="habitacion">Tipo de habitación:</label> <!-- Etiqueta para el campo de tipo de habitación -->
-                <select id="habitacion" name="habitacion" required autocomplete="off"> <!-- Lista desplegable para seleccionar el tipo de habitación -->
-                    <option value="individual">Individual</option>
-                    <option value="doble">Doble</option>
-                    <option value="suite">Suite</option>
-                </select>
-
-                <label for="adultos">Número de adultos:</label> 
-                <input type="number" id="adultos" name="adultos" min="1" max="10" required autocomplete="off"> <!-- Campo numérico para el número de adultos -->
-
-                <label for="ninos">Número de niños:</label>
-                <input type="number" id="ninos" name="ninos" min="0" max="10" required autocomplete="off"> <!-- Campo numérico para el número de niños -->
-
-                <label for="checkin">Fecha de entrada:</label> 
-                <input type="date" id="checkin" name="checkin" required autocomplete="off"> <!-- Campo de fecha para la entrada -->
-
-                <label for="checkout">Fecha de salida:</label> 
-                <input type="date" id="checkout" name="checkout" required autocomplete="off"> <!-- Campo de fecha para la salida -->
-
-                <label for="solicitudes">Solicitudes especiales:</label> 
-                <textarea id="solicitudes" name="solicitudes" autocomplete="off"></textarea> <!-- Campo de texto para solicitudes especiales -->
-            </fieldset>
-            
-            <fieldset class="ultimo"> <!-- Agrupa el campo de aceptación de términos y condiciones -->
-                <legend>Términos y condiciones</legend> 
-                <p>Acepto los <u>términos de la reservación</u>. También acepto los <u>Términos de servicios actualizados</u>, los <u>Términos de servicios sobre pagos y la Política de privacidad</u>.</p>
-                
-                <div class="checkbox-group"> <!-- Contenedor para el checkbox y su label -->
-                    <label>
-                        <input type="checkbox" id="acepta" name="acepta" required> <!-- Checkbox para aceptar los términos y condiciones -->
-                        Acepto los términos y condiciones
-                    </label>
-                </div>
-            </fieldset>
-
-            <button type="submit" value="Confirmar" class="submit">Confirmar Reserva</button> <!-- Botón para enviar el formulario -->
-        </form>
+<!-- Encabezado de la página -->
+<header>
+    <img src="../Imagenes/Logotipo.png" alt="Logotipo" style="width: auto; max-height: 100px;" />
+    <div class="header-div" id="header-div">
+        <h1>Personal repo</h1>
+        <p>By: Camila Castro</p>
     </div>
+    <!-- Botón para alternar la barra de navegación -->
+    <button class="menu-toggle" id="menu-toggle" hidden>
+        ☰
+    </button>
+</header>
+<!-- Barra de navegación principal-->
+<nav id="nav-bar">
+    <ul>
+        <li><a href="indexHome.html">Home</a></li>
+        <li><a href="indexClicker.html">Clicker</a></li>
+        <li><a href="indexCalculadora.html">Calculadora</a></li>
+        <li><a href="indexFormulario.html" class="active">Formulario</a></li>
+        <li><a href="indexGaleria.html">Galería</a></li>
+        <li><a href="indexToDo.html">To Do List</a></li>
+    </ul>
+</nav>
 
-    <footer>
-        <div class = "footer-wrapper">
-            <div class = "footer-columns">
-                <section>
-                    <h3>Projects</h3>
-                    <ul>
-                        <li><a href="indexHome.html">Home</a></li>
-                        <li><a href="indexClicker.html">Clicker</a></li>
-                        <li><a href="indexCalculadora.html">Calculadora</a></li>
-                        <li><a href="indexFormulario.html">Formulario</a></li>
-                        <li><a href="indexGaleria.html">Galería</a></li>
-                        <li><a href="indexToDo.html">To Do List</a></li>
-                    </ul>
-                </section>
-                <section class = "footer-logo">
-                    <img src = "../Imagenes/Logotipo.png" alt = "Logotipo" />
-                </section>
-                <section>
-                    <h3>Contact Me</h3>
-                        <div class = "social-bottom">
-                            <div class = "social-links">
-                                <ul>
-                                    <li>
-                                        <a href = "mailto: castro.maria.5191@eam.edu.co" title = "Email" target="_blank">
-                                            <img src = "../Imagenes/gmail.svg" alt = "Email" />
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href = "https://www.linkedin.com/in/maria-camila-castro-cardona-8733b3265" title = "LinkedIn" target="_blank">
-                                            <img src = "../Imagenes/linkedin.svg" alt = "LinkedIn" />
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href = "https://github.com/milaCastroC" title = "GitHub" target="_blank">
-                                            <img src = "../Imagenes/github.svg" alt = "GitHub" />
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href = "https://www.instagram.com/mila_castro_c/" title = "Instagram" target="_blank">
-                                            <img src = "../Imagenes/instagram.svg" alt = "Instagram" />
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href = "https://www.facebook.com/mariacamila.castrocardona?mibextid=LQQJ4d" title = "Facebook" target="_blank">
-                                            <img src = "../Imagenes/facebook.svg" alt = "Facebook" />
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class = "info" id = "info">
-                            <address>
-                                <span>Maria Camila Castro Cardona</span>
-                                <a href = "mailto: castro.maria.5191@eam.edu.co" title = "Email" target="_blank">castro.maria.5191@eam.edu.co</a>
-                                <span>Cel: 3014181032</span>
-                            </address>
-                        </div>
-                </section>
-                    <div class = "footer-bottom">
-                        <div class = "footer-bottom-wrapper">
-                            <small>
-                                © Institucion universitaria EAM
-                                <span id = "year"></span>, All rights reserved
-                            </small>
-                        </div>
+<!-- Contenedor principal del formulario -->
+<div class="container">
+    <h1>Hotel Encanto del Bosque</h1>
+    <form class="form" onsubmit="return validarFormulario(event)"> <!-- Formulario con validación en el envío -->
+        <fieldset> <!-- Agrupación de campos de información personal -->
+            <legend>Información Personal</legend>
+
+            <label for="nombre">Nombre completo:</label>
+            <input type="text" id="nombre" name="nombre" autocomplete="name" required>
+            <!-- Campo de texto para nombre-->
+
+            <label for="tipoID">Tipo de documento:</label>
+            <select id="tipoID" name="tipoID" required autocomplete="off">
+                <!-- Lista desplegable para seleccionar el tipo de documento -->
+                <option value="CC">Cédula de Ciudadanía</option>
+                <option value="CE">Cédula de Extranjería</option>
+                <option value="Pasaporte">Pasaporte</option>
+                <option value="NIT">NIT</option>
+            </select>
+
+            <label for="id">Número de documento:</label>
+            <input type="text" id="id" name="id" autocomplete="id" required>
+            <!-- Campo de texto para el número de documento  -->
+
+            <label for="pdfID">Sube tu documento de identidad en PDF:</label>
+            <input type="file" name="pdfID" id="pdfID" accept=".pdf" required>
+            <!-- Campo de archivo para subir un PDF con documento de identidad -->
+
+            <label for="fecha">Fecha de Nacimiento:</label>
+            <input type="date" id="fecha" name="fecha" autocomplete="bday" required>
+            <!-- Campo de fecha para fecha de nacimiento  -->
+
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" autocomplete="email" required>
+            <!-- Campo de texto para correo electrónico  -->
+
+            <label for="telefono">Teléfono de contacto:</label>
+            <input type="tel" id="telefono" name="telefono" autocomplete="tel" required>
+            <!-- Campo de texto para número de teléfono  -->
+        </fieldset>
+
+        <fieldset> <!-- Agrupa campos de detalles de la reserva -->
+            <legend>Detalles de la reserva</legend>
+
+            <label for="habitacion">Tipo de habitación:</label> <!-- Etiqueta para el campo de tipo de habitación -->
+            <select id="habitacion" name="habitacion" required autocomplete="off">
+                <!-- Lista desplegable para seleccionar el tipo de habitación -->
+                <option value="individual">Individual</option>
+                <option value="doble">Doble</option>
+                <option value="suite">Suite</option>
+            </select>
+
+            <label for="adultos">Número de adultos:</label>
+            <input type="number" id="adultos" name="adultos" min="1" max="10" required autocomplete="off">
+            <!-- Campo numérico para el número de adultos -->
+
+            <label for="ninos">Número de niños:</label>
+            <input type="number" id="ninos" name="ninos" min="0" max="10" required autocomplete="off">
+            <!-- Campo numérico para el número de niños -->
+
+            <label for="checkin">Fecha de entrada:</label>
+            <input type="date" id="checkin" name="checkin" required autocomplete="off">
+            <!-- Campo de fecha para la entrada -->
+
+            <label for="checkout">Fecha de salida:</label>
+            <input type="date" id="checkout" name="checkout" required autocomplete="off">
+            <!-- Campo de fecha para la salida -->
+
+            <label for="solicitudes">Solicitudes especiales:</label>
+            <textarea id="solicitudes" name="solicitudes" autocomplete="off"></textarea>
+            <!-- Campo de texto para solicitudes especiales -->
+        </fieldset>
+
+        <fieldset class="ultimo"> <!-- Agrupa el campo de aceptación de términos y condiciones -->
+            <legend>Términos y condiciones</legend>
+            <p>Acepto los <u>términos de la reservación</u>. También acepto los <u>Términos de servicios
+                    actualizados</u>, los <u>Términos de servicios sobre pagos y la Política de privacidad</u>.</p>
+
+            <div class="checkbox-group"> <!-- Contenedor para el checkbox y su label -->
+                <label>
+                    <input type="checkbox" id="acepta" name="acepta" required>
+                    <!-- Checkbox para aceptar los términos y condiciones -->
+                    Acepto los términos y condiciones
+                </label>
+            </div>
+        </fieldset>
+
+        <button type="submit" value="Confirmar" class="submit">Confirmar Reserva</button>
+        <!-- Botón para enviar el formulario -->
+    </form>
+</div>
+
+<!--Sección del footer-->
+<footer>
+    <div class="footer-wrapper">
+        <div class="footer-columns">
+            <section>
+                <h3>Projects</h3>
+                <ul>
+                    <li><a href="indexHome.html">Home</a></li>
+                    <li><a href="indexClicker.html">Clicker</a></li>
+                    <li><a href="indexCalculadora.html">Calculadora</a></li>
+                    <li><a href="indexFormulario.html">Formulario</a></li>
+                    <li><a href="indexGaleria.html">Galería</a></li>
+                    <li><a href="indexToDo.html">To Do List</a></li>
+                </ul>
+            </section>
+            <section class="footer-logo">
+                <img src="../Imagenes/Logotipo.png" alt="Logotipo" />
+            </section>
+            <section>
+                <h3>Contact Me</h3>
+                <div class="social-bottom">
+                    <div class="social-links">
+                        <ul>
+                            <li>
+                                <a href="mailto: castro.maria.5191@eam.edu.co" title="Email" target="_blank">
+                                    <img src="../Imagenes/gmail.svg" alt="Email" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/maria-camila-castro-cardona-8733b3265"
+                                    title="LinkedIn" target="_blank">
+                                    <img src="../Imagenes/linkedin.svg" alt="LinkedIn" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/milaCastroC" title="GitHub" target="_blank">
+                                    <img src="../Imagenes/github.svg" alt="GitHub" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/mila_castro_c/" title="Instagram" target="_blank">
+                                    <img src="../Imagenes/instagram.svg" alt="Instagram" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com/mariacamila.castrocardona?mibextid=LQQJ4d"
+                                    title="Facebook" target="_blank">
+                                    <img src="../Imagenes/facebook.svg" alt="Facebook" />
+                                </a>
+                            </li>
+                        </ul>
                     </div>
+                </div>
+                <div class="info" id="info">
+                    <address>
+                        <span>Maria Camila Castro Cardona</span>
+                        <a href="mailto: castro.maria.5191@eam.edu.co" title="Email"
+                            target="_blank">castro.maria.5191@eam.edu.co</a>
+                        <span>Cel: 3014181032</span>
+                    </address>
+                </div>
+            </section>
+            <div class="footer-bottom">
+                <div class="footer-bottom-wrapper">
+                    <small>
+                        © Institucion universitaria EAM
+                        <span id="year"></span>, All rights reserved
+                    </small>
+                </div>
             </div>
         </div>
-    </footer>
-    
+    </div>
+</footer>
+<!-- Enlace al archivo de JavaScript-->
 </body>
-    <script src="../JS/scriptFormulario.js" defer></script> <!-- Enlace al archivo de JavaScript para la validación del formulario-->
-                                                        <!--defer para que se ejecute despues de la carga-->
+<script src="../JS/scriptFormulario.js" defer></script><!--defer para que se ejecute despues de la carga-->
+
 </html>

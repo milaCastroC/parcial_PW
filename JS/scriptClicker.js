@@ -1,3 +1,4 @@
+// Obtiene el elemento con el ID "year" del documento HTML y el año actual utilizando el objeto Date de JavaScript
 document.getElementById("year").innerHTML = new Date().getFullYear();
 
 // Selecciona el botón y la barra de navegación
@@ -5,7 +6,7 @@ const menuToggle = document.getElementById('menu-toggle');
 const navBar = document.getElementById('nav-bar');
 
 // Añade un evento de clic al botón
-menuToggle.addEventListener('click', function() {
+menuToggle.addEventListener('click', function () {
     // Alterna la clase 'active' en el navBar para mostrar/ocultar
     navBar.classList.toggle('active');
 });
@@ -26,7 +27,7 @@ let conteoActual = 0; // Inicializa el contador en 0
 // Inicializar la variable record
 let record;
 const recordGuardado = localStorage.getItem('record'); // Obtiene el récord guardado en localStorage
-if (recordGuardado !== null) { 
+if (recordGuardado !== null) {
     record = parseInt(recordGuardado); // Si existe, convierte el valor guardado a número y lo asigna a 'record'
 } else {
     record = 0; // Si no existe, inicializa 'record' en 0
@@ -58,7 +59,7 @@ incrementarBoton.addEventListener('click', () => {
 
 // Añadir evento al botón de decrementar
 decrementarBoton.addEventListener('click', () => {
-    if (conteoActual > 0) { 
+    if (conteoActual > 0) {
         conteoActual--; // Decrementa el conteo actual en 1 solo si es mayor que 0
         contador.textContent = conteoActual; // Actualiza el texto del contador
         clickDecrementarSonido.play(); // Reproduce el sonido de decremento

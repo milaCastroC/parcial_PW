@@ -1,78 +1,79 @@
+/* Estilos para el contenedor principal */
 .content {
-    font-family: Arial, sans-serif;/* Define la fuente de texto */
-    background-image: url('../Imagenes/fondoClicker.jpg');/* Aplica la imagen de fondo  */
-    background-size: cover;/* Acomoda la imagen al contenedor */
-    background-position: center;/* Centra la imagen */
-    display: flex;/* Alineacion y distribucion de los elementos */
-    justify-content: center;/* Centra horizontalmente los elementos dentro del contenedor */
-    align-items: center;/* Centra verticalmente los elementos dentro del contenedor */
-    height: 100vh;/* Para que ocupe la altura del navegador*/
-    margin: 0;/* Elimina el margen del contenedor.*/
+    font-family: Arial, sans-serif; /* Define la fuente de texto para el contenedor principal */
+    background-image: url('../Imagenes/fondoClicker.jpg'); /* Aplica una imagen de fondo al contenedor */
+    background-size: cover; /* Acomoda la imagen para cubrir todo el contenedor */
+    background-position: center; /* Centra la imagen de fondo dentro del contenedor */
+    display: flex; /* Usa Flexbox para alinear y distribuir los elementos dentro del contenedor */
+    justify-content: center; /* Centra horizontalmente los elementos dentro del contenedor */
+    align-items: center; /* Centra verticalmente los elementos dentro del contenedor */
+    height: 100vh; /* Hace que el contenedor ocupe el 100% de la altura de la ventana del navegador */
+    margin: 0; /* Elimina el margen exterior del contenedor */
 }
 
-/* Header */
+/* Estilos para el encabezado (header) */
 header {
-    background-color: #000000;
-    color: #ffffff;
-    padding: 20px;
-    text-align: center;
+    background-color: #000000; /* Color de fondo negro para el encabezado */
+    color: #ffffff; /* Color de texto blanco en el encabezado */
+    padding: 20px; /* Espaciado interior del encabezado */
+    text-align: center; /* Centra el texto dentro del encabezado */
 }
 
-.header-div{
-    display: inline-block;
+/* Estilos para el div dentro del encabezado */
+.header-div {
+    display: inline-block; /* Muestra el div como un elemento en línea con bloque */
 }
 
 header img {
-    max-width: 7%;
-    height: auto;
+    max-width: 7%; /* Establece el ancho máximo de la imagen del encabezado */
+    height: auto; /* Mantiene la proporción de la imagen */
 }
 
 header h1 {
-    margin: 0;
-    font-family:  "New Amsterdam", sans-serif;
-    color: #ffffff;
+    margin: 0; /* Elimina el margen del encabezado */
+    font-family: "New Amsterdam", sans-serif; /* Define la fuente para el título */
+    color: #ffffff; /* Color del texto del título */
 }
 
 header p {
-    font-size: 100%;
-    font-family: "Shadows Into Light", cursive;
-    font-weight: bold;
-    padding: 0;
-    margin: 0;
+    font-size: 100%; /* Tamaño de fuente del párrafo */
+    font-family: "Shadows Into Light", cursive; /* Fuente cursiva para el párrafo */
+    font-weight: bold; /* Aplica negrita al texto del párrafo */
+    padding: 0; /* Elimina el espaciado interior del párrafo */
+    margin: 0; /* Elimina el margen exterior del párrafo */
 }
 
-/* Navegación */
+/* Estilos para la barra de navegación (nav) */
 nav {
-    background: linear-gradient(45deg, #ffffff, #10ffbf);
-    padding: 10px 0;
-    font-family: "Oswald", sans-serif;
-    font-size: 20px;
+    background: linear-gradient(45deg, #ffffff, #10ffbf); /* Aplica un fondo degradado a la barra de navegación */
+    padding: 10px 0; /* Espaciado interior de la barra de navegación */
+    font-family: "Oswald", sans-serif; /* Define la fuente para la barra de navegación */
+    font-size: 20px; /* Tamaño de fuente para los elementos de la barra de navegación */
 }
 
 nav ul {
-    list-style: none;
-    text-align: center;
+    list-style: none; /* Elimina los puntos de lista predeterminados */
+    text-align: center; /* Centra los elementos de la lista dentro de la barra de navegación */
 }
 
 nav ul li {
-    display: inline-block;
-    margin: 0 15px;
+    display: inline-block; /* Muestra cada elemento de la lista en línea con bloque */
+    margin: 0 15px; /* Espacio horizontal entre los elementos de la lista */
 }
 
 nav ul li a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-    padding: 5px 10px;
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: #333; /* Color del texto de los enlaces */
+    font-weight: bold; /* Aplica negrita al texto de los enlaces */
+    padding: 5px 10px; /* Espaciado interior de los enlaces */
 }
 
 nav ul li a.active {
-    color: #10ffbf;
-    background-color: #333;
-    border-radius: 5px;
-    padding: 5px 15px;
+    color: #10ffbf; /* Color del texto del enlace activo */
+    background-color: #333; /* Fondo oscuro para el enlace activo */
+    border-radius: 5px; /* Redondea las esquinas del enlace activo */
+    padding: 5px 15px; /* Ajusta el espaciado interior del enlace activo */
 }
-
 
 .container {
     background-color: #fff;/* Color de fondo*/
@@ -140,59 +141,59 @@ h1 {
 footer {
     background-color: #333; /* Color de fondo oscuro para el footer */
     color: #fff; /* Color de texto blanco para contraste */
-    padding: 40px 20px;
-    font-family: "Open Sans", sans-serif;
-    position: relative; /* Asegura que el footer se ajuste al contenido */
-    text-align: center; /* Centra el texto dentro de cada columna */
+    padding: 40px 20px; /* Espaciado interior del footer */
+    font-family: "Open Sans", sans-serif; /* Fuente de texto en el footer */
+    position: relative; /* Posición relativa para el footer para posicionamiento de elementos internos */
+    text-align: center; /* Centra el texto dentro del footer */
 }
 
 /* Columnas del footer */
 .footer-columns {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center; /* Centra las columnas horizontalmente */
-    margin-bottom: 60px; /* Espacio para el footer inferior */
+    display: flex; /* Usa Flexbox para disposición de las columnas */
+    flex-wrap: wrap; /* Permite que las columnas se envuelvan en múltiples líneas si es necesario */
+    gap: 20px; /* Espacio entre columnas */
+    justify-content: center; /* Centra las columnas horizontalmente en el footer */
+    margin-bottom: 60px; /* Espacio inferior para separar el footer del contenido debajo */
 }
 
 /* Logo en el footer */
 .footer-logo {
-    flex: 1;
-    text-align: center;
+    flex: 1; /* Permite que el logo ocupe espacio flexible dentro de las columnas */
+    text-align: center; /* Centra el logo horizontalmente */
 }
 
 .footer-logo img {
-    max-width: 150px; /* Ajusta el tamaño del logotipo */
-    height: auto;
+    max-width: 150px; /* Ajusta el tamaño máximo del logotipo */
+    height: auto; /* Mantiene la proporción del logotipo */
 }
 
 /* Sección de proyectos y contacto */
 .footer-columns section {
-    flex: 1;
-    min-width: 200px;
-    padding-bottom: 5%;
+    flex: 1; /* Permite que cada sección ocupe espacio flexible dentro de las columnas */
+    min-width: 200px; /* Ancho mínimo para cada sección */
+    padding-bottom: 5%; /* Espaciado inferior en cada sección */
 }
 
 .footer-columns h3 {
-    font-family: "Oswald", sans-serif;
-    font-size: 24px; /* Ajuste el tamaño de la fuente */
-    margin-bottom: 10px;
+    font-family: "Oswald", sans-serif; /* Fuente para los encabezados en las columnas */
+    font-size: 24px; /* Tamaño de fuente para los encabezados */
+    margin-bottom: 10px; /* Espacio inferior debajo de los encabezados */
 }
 
 .footer-columns ul {
-    list-style: none;
-    padding: 0;
+    list-style: none; /* Elimina los puntos de lista predeterminados */
+    padding: 0; /* Elimina el espaciado interior de la lista */
 }
 
 .footer-columns ul li {
-    margin-bottom: 10px;
+    margin-bottom: 10px; /* Espacio inferior entre los elementos de la lista */
 }
 
 .footer-columns ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: bold;
+    color: #fff; /* Color del texto de los enlaces en las columnas */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    font-size: 16px; /* Tamaño de fuente para los enlaces */
+    font-weight: bold; /* Aplica negrita a los enlaces */
 }
 
 .footer-columns ul li a:hover {
@@ -201,37 +202,37 @@ footer {
 
 /* Redes sociales */
 .social-links ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    gap: 15px;
-    justify-content: center;
+    list-style: none; /* Elimina los puntos de lista predeterminados */
+    padding: 0; /* Elimina el espaciado interior de la lista */
+    display: flex; /* Usa Flexbox para disposición de los íconos */
+    gap: 15px; /* Espacio entre los íconos */
+    justify-content: center; /* Centra los íconos horizontalmente */
 }
 
 .social-links img {
-    width: 30px; /* Ajuste el tamaño de los iconos */
-    height: 30px;
-    transition: opacity 0.3s ease;
-    filter: invert(1);
+    width: 30px; /* Tamaño de los íconos de redes sociales */
+    height: 30px; /* Tamaño de los íconos de redes sociales */
+    transition: opacity 0.3s ease; /* Transición suave para el efecto de opacidad */
+    filter: invert(1); /* Invierte los colores de los íconos para que se adapten al fondo oscuro */
 }
 
 .social-links img:hover {
-    opacity: 0.8; /* Efecto de opacidad en las redes sociales al pasar el ratón */
+    opacity: 0.8; /* Efecto de opacidad en los íconos de redes sociales al pasar el ratón */
 }
 
 /* Estilos para la sección de información de contacto */
 .info {
     color: #fff; /* Color de texto blanco para contraste */
-    padding: 20px;
+    padding: 20px; /* Espaciado interior de la sección de contacto */
     text-align: left; /* Alinea el texto a la izquierda */
     margin: 20px auto; /* Espacio alrededor y centrado horizontalmente */
     max-width: 400px; /* Ancho máximo para la sección de contacto */
-    text-align: center;
+    text-align: center; /* Centra el texto para una mejor presentación */
 }
 
 .info address {
-    font-style: normal; /* Elimina el estilo itálico predeterminado de <address> */
-    font-family: "Open Sans", sans-serif;
+    font-style: normal; /* Elimina el estilo itálico predeterminado del elemento <address> */
+    font-family: "Open Sans", sans-serif; /* Fuente para la información de contacto */
 }
 
 .info span {
@@ -239,98 +240,104 @@ footer {
 }
 
 .info a {
-    color: #10ffbf; /* Color del enlace */
+    color: #10ffbf; /* Color del enlace en la sección de contacto */
     text-decoration: none; /* Elimina el subrayado del enlace */
-    font-weight: bold; /* Negrita para resaltar el enlace */
+    font-weight: bold; /* Aplica negrita al texto del enlace */
 }
 
 .info a:hover {
-    text-decoration: underline; /* Subrayado al pasar el ratón para mejor visibilidad */
+    text-decoration: underline; /* Subrayado del enlace al pasar el ratón para mejor visibilidad */
 }
 
 /* Parte inferior del footer */
 .footer-bottom {
-    background-color: #10ffbf;
-    padding: 20px 0;
-    text-align: center;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+    background-color: #10ffbf; /* Color de fondo para la parte inferior del footer */
+    padding: 20px 0; /* Espaciado interior de la parte inferior del footer */
+    text-align: center; /* Centra el texto en la parte inferior del footer */
+    position: absolute; /* Posiciona la parte inferior del footer de manera absoluta en relación con el contenedor */
+    bottom: 0; /* Alinea la parte inferior del footer al borde inferior del contenedor */
+    width: 100%; /* Hace que la parte inferior del footer ocupe todo el ancho del contenedor */
 }
 
-
-/* Estilos específicos para dispositivos pequeños */
+/* Estilos específicos para dispositivos pequeños (máximo 768px de ancho) */
 @media (max-width: 768px) {
     /* Mostrar el botón de menú */
     .menu-toggle {
-        display: inline-block;
-        background: none;
-        border: none;
-        font-size: 30px;
-        cursor: pointer;
-        font-weight: bold;
-        color: #ffffff;
+        display: inline-block; /* Muestra el botón de menú como un elemento en línea */
+        background: none; /* Sin fondo en el botón */
+        border: none; /* Sin borde en el botón */
+        font-size: 30px; /* Tamaño de fuente grande para el botón de menú */
+        cursor: pointer; /* Cambia el cursor a una mano al pasar sobre el botón */
+        font-weight: bold; /* Aplica negrita al texto del botón */
+        color: #ffffff; /* Color del texto del botón */
     }
 
+    /* Ajustes para la imagen en el header */
     header img {
-        max-width: 100%;
-        height: auto;
+        max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
+        height: auto; /* Mantiene la proporción de la imagen */
     }
 
+    /* Ajustes para el título en el header */
     header h1 {
-        font-size: 20px;
-        margin-right: 60px;
+        font-size: 20px; /* Tamaño de fuente más pequeño para el título */
+        margin-right: 60px; /* Espacio a la derecha del título */
     }
 
-    header p{
-        font-size: 10px;
+    /* Ajustes para el párrafo en el header */
+    header p {
+        font-size: 10px; /* Tamaño de fuente más pequeño para el párrafo */
     }
-/* Ocultar la barra de navegación por defecto */
+
+    /* Ocultar la barra de navegación por defecto en dispositivos pequeños */
     nav {
-        display: none;
+        display: none; /* No muestra la barra de navegación */
     }
 
     /* Mostrar la barra de navegación cuando se activa */
     nav.active {
-        display: block;
-        top: 22%;
-        width: 100%;
-        background-color: #ffffff;
-        z-index: 1000;
+        display: block; /* Muestra la barra de navegación */
+        top: 22%; /* Posiciona la barra de navegación a un 22% desde la parte superior del contenedor */
+        width: 100%; /* Ancho completo de la barra de navegación */
+        background-color: #ffffff; /* Color de fondo blanco para la barra de navegación */
+        z-index: 1000; /* Asegura que la barra de navegación esté encima de otros elementos */
     }
 
+    /* Estilos para la lista en la barra de navegación */
     nav ul {
-        text-align: left;
-        padding: 10px;
+        text-align: left; /* Alinea el texto de la lista a la izquierda */
+        padding: 10px; /* Espaciado interior de la lista */
     }
 
     nav ul li {
-        display: block;
-        margin: 10px 0;
+        display: block; /* Muestra cada elemento de la lista en una nueva línea */
+        margin: 10px 0; /* Espacio vertical entre los elementos de la lista */
     }
 
     nav ul li a {
-        display: block;
-        padding: 10px;
-        border-bottom: 1px solid #10ffbf;
-        text-align: center;
+        display: block; /* Hace que cada enlace ocupe un bloque completo */
+        padding: 10px; /* Espaciado interior de los enlaces */
+        border-bottom: 1px solid #10ffbf; /* Línea inferior en los enlaces para separarlos */
+        text-align: center; /* Centra el texto dentro de los enlaces */
     }
 
-
+    /* Ajustes para el logotipo en el footer */
     .footer-logo img {
-        max-width: 20%;
+        max-width: 20%; /* Tamaño máximo del logotipo en pantallas pequeñas */
     }
 
-        /* Sección de proyectos y contacto */
+    /* Ajustes para las columnas del footer */
     .footer-columns {
         justify-content: center; /* Centra las columnas horizontalmente */
         text-align: center; /* Centra el texto dentro de cada columna */
     }
 
+    /* Ajustes para cada sección dentro del footer */
     .footer-columns section {
-        min-width: 200px;
+        min-width: 200px; /* Ancho mínimo para cada sección en el footer */
     }
 
+    /* Ajustes para la información de contacto */
     .info {
         padding: 15px; /* Reducir el padding para pantallas pequeñas */
         margin: 10px auto; /* Espacio alrededor y centrado horizontalmente */
@@ -345,8 +352,4 @@ footer {
     .info a {
         font-size: 14px; /* Reducir el tamaño de fuente del enlace */
     }
-
-        
-    }
-
-
+}

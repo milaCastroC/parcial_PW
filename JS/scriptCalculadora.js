@@ -1,3 +1,4 @@
+// Obtiene el elemento con el ID "year" del documento HTML y el año actual utilizando el objeto Date de JavaScript
 document.getElementById("year").innerHTML = new Date().getFullYear();
 
 // Selecciona el botón y la barra de navegación
@@ -5,7 +6,7 @@ const menuToggle = document.getElementById('menu-toggle');
 const navBar = document.getElementById('nav-bar');
 
 // Añade un evento de clic al botón
-menuToggle.addEventListener('click', function() {
+menuToggle.addEventListener('click', function () {
     // Alterna la clase 'active' en el navBar para mostrar/ocultar
     navBar.classList.toggle('active');
 });
@@ -105,7 +106,7 @@ function applyThemeStyles(color, root) {
             root.style.setProperty('--operator-bg-color-hover', '#FFD400');
             root.style.setProperty('--clear-bg-color', '#F9A825');
             root.style.setProperty('--clear-bg-color-hover', '#F56F17');
-            root.style.setProperty('--body-bg-color', '#f9f6a1'); 
+            root.style.setProperty('--body-bg-color', '#f9f6a1');
             break;
         case 'pink':
             root.style.setProperty('--calculator-bg-color', '#fcd2f7');
@@ -115,7 +116,7 @@ function applyThemeStyles(color, root) {
             root.style.setProperty('--operator-bg-color-hover', '#e16f');
             root.style.setProperty('--clear-bg-color', '#f7b8');
             root.style.setProperty('--clear-bg-color-hover', '#f08f');
-            root.style.setProperty('--body-bg-color', '#f6c1e1'); 
+            root.style.setProperty('--body-bg-color', '#f6c1e1');
             break;
         case 'blue':
             root.style.setProperty('--calculator-bg-color', '#dbf2ff');
@@ -125,7 +126,7 @@ function applyThemeStyles(color, root) {
             root.style.setProperty('--operator-bg-color-hover', '#2898ee');
             root.style.setProperty('--clear-bg-color', '#107ACC');
             root.style.setProperty('--clear-bg-color-hover', '#15296C');
-            root.style.setProperty('--body-bg-color', '#bde0ff'); 
+            root.style.setProperty('--body-bg-color', '#bde0ff');
             break;
         case 'reset':
             root.style.setProperty('--calculator-bg-color', '#ffff');
@@ -135,14 +136,14 @@ function applyThemeStyles(color, root) {
             root.style.setProperty('--operator-bg-color-hover', '#818683');
             root.style.setProperty('--clear-bg-color', '#222322');
             root.style.setProperty('--clear-bg-color-hover', '#656867');
-            root.style.setProperty('--body-bg-color', '#f4f4f4'); 
+            root.style.setProperty('--body-bg-color', '#f4f4f4');
             break;
     }
 
 }
 
- // Función para previsualizar el tema 
- function previewTheme(color) {
+// Función para previsualizar el tema 
+function previewTheme(color) {
     const root = document.documentElement;// Obtiene el elemento raíz del documento
     applyThemeStyles(color, root); // Aplica los estilos del tema
 }
@@ -162,10 +163,14 @@ function applyTheme(color) {
 
 // Función para minimizar o maximizar el sidebar
 function toggleSidebar() {
-    
+
     const sidebar = document.getElementById('sidebar'); // Obtiene el elemento con el id 'sidebar' y lo almacena en la variable 'sidebar'
     const calculator = document.getElementById('calculator');  // Obtiene el elemento con el id 'calculator' y lo almacena en la variable 'calculator'
 
+    // Alterna la clase 'minimized' en el elemento 'sidebar'
+    // Si el sidebar tiene la clase 'minimized', se la quita; si no la tiene, se la agrega
     sidebar.classList.toggle('minimized');
+    // Alterna la clase 'minimized' en el elemento 'calculator'
+    // Esto permite que el contenido de la calculadora también se oculte o muestre según se minimice o maximice el sidebar
     calculator.classList.toggle('minimized');
 }

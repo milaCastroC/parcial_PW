@@ -1,3 +1,4 @@
+// Obtiene el elemento con el ID "year" del documento HTML y el año actual utilizando el objeto Date de JavaScript
 document.getElementById("year").innerHTML = new Date().getFullYear();
 
 // Selecciona el botón y la barra de navegación
@@ -5,7 +6,7 @@ const menuToggle = document.getElementById('menu-toggle');
 const navBar = document.getElementById('nav-bar');
 
 // Añade un evento de clic al botón
-menuToggle.addEventListener('click', function() {
+menuToggle.addEventListener('click', function () {
     // Alterna la clase 'active' en el navBar para mostrar/ocultar
     navBar.classList.toggle('active');
 });
@@ -15,10 +16,10 @@ var script = document.createElement('script');
 script.src = "https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js";  // URL del script de Masonry
 
 // Función que define lo que sucede una vez que el script se ha cargado
-script.onload = function() {
+script.onload = function () {
     // Selecciona el contenedor de la galería
     var elem = document.querySelector('.gallery-container');
-    
+
     // Inicializar Masonry con las opciones deseadas
     var msnry = new Masonry(elem, {
         itemSelector: '.grid-item',  // Especifica que los elementos del grid son los que tienen la clase 'grid-item'

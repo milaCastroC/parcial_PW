@@ -5,34 +5,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="../CSS/styleHome.css">
+    <link rel="stylesheet" href="../CSS/styleHome.css"> <!-- Enlace a la hoja de estilos CSS-->
 
+    <!-- Importación de fuentes desde Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link href="https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=New+Amsterdam&family=Shadows+Into+Light&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=New+Amsterdam&family=Oswald:wght@200..700&family=Shadows+Into+Light&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=New+Amsterdam&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Shadows+Into+Light&display=swap"  rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=New+Amsterdam&family=Shadows+Into+Light&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=New+Amsterdam&family=Oswald:wght@200..700&family=Shadows+Into+Light&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=New+Amsterdam&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Shadows+Into+Light&display=swap"
+        rel="stylesheet">
 
 </head>
 
 <body>
+    <!-- Sección de cabecera -->
     <header>
         <img src="../Imagenes/Logotipo.png" alt="Logotipo" style="width: auto; max-height: 100px;" />
         <div class="header-div" id="header-div">
             <h1>Personal repo</h1>
             <p>By: Camila Castro</p>
         </div>
-         <!-- Botón para alternar la barra de navegación -->
-         <button class="menu-toggle" id="menu-toggle" hidden>
+        <!-- Botón para alternar la barra de navegación -->
+        <button class="menu-toggle" id="menu-toggle" hidden>
             ☰
         </button>
     </header>
 
-    <nav id = "nav-bar">
+    <!-- Barra de navegación -->
+    <nav id="nav-bar">
         <ul>
-            <li><a href="indexHome.html" class = "active">Home</a></li>
+            <li><a href="indexHome.html" class="active">Home</a></li>
             <li><a href="indexClicker.html">Clicker</a></li>
             <li><a href="indexCalculadora.html">Calculadora</a></li>
             <li><a href="indexFormulario.html">Formulario</a></li>
@@ -40,14 +48,14 @@
             <li><a href="indexToDo.html">To Do List</a></li>
         </ul>
     </nav>
-
+    <!-- Sección de banner-->
     <div class="banner" id="banner">
         <div class=banner-container id=banner-container>
             <img src="../Imagenes/bannerHome.png" alt=banner />
             <h6 class="banner-text">WELCOME</h6>
         </div>
     </div>
-
+    <!-- Sección "About Me" (información personal) -->
     <div class="aboutMe" id="aboutMe">
         <h6>ABOUT ME</h6>
         <div class="aboutMe-content">
@@ -59,18 +67,22 @@
                 (HTML, CSS, y JavaScript). Lo que más me apasiona es poder transformar ideas en realidad y hacer
                 infinidad de cosas por medio de la tecnología.
                 <br><br>
-                Aunque estoy explorando diferentes áreas, me siento particularmente atraída por el desarrollo Frontend, donde puedo combinar
+                Aunque estoy explorando diferentes áreas, me siento particularmente atraída por el desarrollo Frontend,
+                donde puedo combinar
                 creatividad y tecnología.
                 <br><br>
-                En cuanto a certificaciones, tengo un técnico en desarrollo de software, un curso de fundamentos de Python y otro de
+                En cuanto a certificaciones, tengo un técnico en desarrollo de software, un curso de fundamentos de
+                Python y otro de
                 introducción a la programación web (HTML y CSS).Además, cuento con un nivel B1 en inglés.
                 <br><br>
                 Lo que más me motiva es la posibilidad de usar la tecnología para crear soluciones que
-                impacten positivamente en la vida de las personas. Estoy emocionada por seguir aprendiendo y creciendo en
+                impacten positivamente en la vida de las personas. Estoy emocionada por seguir aprendiendo y creciendo
+                en
                 este campo, y espero contribuir con proyectos que hagan la diferencia.
             </p>
         </div>
 
+        <!-- Sección  skills (habilidades) -->
         <div class="skills" id="skills">
             <h6>SKILLS</h6>
             <div class="skills-container">
@@ -98,70 +110,82 @@
         </div>
     </div>
 
+    <!-- Sección de proyectos-->
     <div class="projects" id="projects">
         <div class="projects-title" id="projects-title">
             <h6>PROJECTS</h6>
         </div>
-    
+
         <div class="project-items-container">
             <div class="project-item">
-                <img src="../Imagenes/formulario.png" alt="formulario"/>
+                <img src="../Imagenes/formulario.png" alt="formulario" />
                 <div class="project-caption">
                     <a href="indexFormulario.html">
                         <h3>Formulario</h3>
                     </a>
-                    <p>Este código implementa un formulario web para realizar reservas. Incluye campos para que el usuario ingrese su información y detalles de la reserva, además se utilizan validaciones con JavaScript.</p>
+                    <p>Este código implementa un formulario web para realizar reservas. Incluye campos para que el
+                        usuario ingrese su información y detalles de la reserva, además se utilizan validaciones con
+                        JavaScript.</p>
                 </div>
             </div>
-    
+
             <div class="project-item">
-                <img src="../Imagenes/clicker.png" alt="clicker"/>
+                <img src="../Imagenes/clicker.png" alt="clicker" />
                 <div class="project-caption">
                     <a href="indexClicker.html">
                         <h3>Clicker</h3>
                     </a>
-                    <p>Contador interactivo que permite incrementar o decrementar un contador con botones. Además, guarda y muestra el récord más alto alcanzado, almacenando estos valores en el navegador utilizando localStorage</p>
+                    <p>Contador interactivo que permite incrementar o decrementar un contador con botones. Además,
+                        guarda y muestra el récord más alto alcanzado, almacenando estos valores en el navegador
+                        utilizando localStorage</p>
                 </div>
             </div>
-    
+
             <div class="project-item">
-                <img src="../Imagenes/calculadora.png" alt="calculadora"/>
+                <img src="../Imagenes/calculadora.png" alt="calculadora" />
                 <div class="project-caption">
                     <a href="indexCalculadora.html">
                         <h3>Calculadora</h3>
                     </a>
-                    <p>Implementa una calculadora web con funcionalidades básicas(suma, resta, multiplicación y división) y opciones de personalización de estilo.</p>
+                    <p>Implementa una calculadora web con funcionalidades básicas(suma, resta, multiplicación y
+                        división) y opciones de personalización de estilo.</p>
                 </div>
             </div>
-    
+
             <div class="project-item">
-                <img src="../Imagenes/galeria.png" alt="galeria"/>
+                <img src="../Imagenes/galeria.png" alt="galeria" />
                 <div class="project-caption">
                     <a href="indexGaleria.html">
                         <h3>Galería</h3>
                     </a>
-                    <p>Página web que muestra una galería de imágenes de aves. La galería está diseñada con un estilo de rejilla (masonry) que organiza las imágenes en columnas adaptables al tamaño de la pantalla. Cada imagen tiene una leyenda y un enlace a la Wikipedia para más información sobre la especie representada.</p>
+                    <p>Página web que muestra una galería de imágenes de aves. La galería está diseñada con un estilo de
+                        rejilla (masonry) que organiza las imágenes en columnas adaptables al tamaño de la pantalla.
+                        Cada imagen tiene una leyenda y un enlace a la Wikipedia para más información sobre la especie
+                        representada.</p>
                 </div>
             </div>
-    
+
             <div class="project-item">
-                <img src="../Imagenes/toDoList.png" alt="ToDo list"/>
+                <img src="../Imagenes/toDoList.png" alt="ToDo list" />
                 <div class="project-caption">
                     <a href="indexToDo.html">
                         <h3>To Do list</h3>
                     </a>
-                    <p>Lista de tareas (To-Do List) que permite a los usuarios agregar, completar y eliminar tareas. Las tareas se guardan en el localStorage, además cuanta con un diseño es responsivo y se ajusta a diferentes tamaños de pantalla.</p>
+                    <p>Lista de tareas (To-Do List) que permite a los usuarios agregar, completar y eliminar tareas. Las
+                        tareas se guardan en el localStorage, además cuanta con un diseño es responsivo y se ajusta a
+                        diferentes tamaños de pantalla.</p>
                 </div>
             </div>
         </div>
     </div>
-    
+
+    <!-- Sección de contacto con un formulario -->
     <div class="contact" id="contact">
-        <h6 class = "contactMe-title">CONTACT ME</h6>
+        <h6 class="contactMe-title">CONTACT ME</h6>
         <form class="contact-form" onsubmit="return validarFormulario(event)">
             <label for="name">Nombre:</label>
             <input type="text" id="name" name="name" required>
-            
+
             <label for="email">Correo Electrónico:</label>
             <input type="email" id="email" name="email" required>
 
@@ -172,9 +196,10 @@
         </form>
     </div>
 
+    <!--Seccion de footer-->
     <footer>
-        <div class = "footer-wrapper">
-            <div class = "footer-columns">
+        <div class="footer-wrapper">
+            <div class="footer-columns">
                 <section>
                     <h3>Projects</h3>
                     <ul>
@@ -186,62 +211,66 @@
                         <li><a href="indexToDo.html">To Do List</a></li>
                     </ul>
                 </section>
-                <section class = "footer-logo">
-                    <img src = "../Imagenes/Logotipo.png" alt = "Logotipo" />
+                <section class="footer-logo">
+                    <img src="../Imagenes/Logotipo.png" alt="Logotipo" />
                 </section>
                 <section>
                     <h3>Contact Me</h3>
-                        <div class = "social-bottom">
-                            <div class = "social-links">
-                                <ul>
-                                    <li>
-                                        <a href = "mailto: castro.maria.5191@eam.edu.co" title = "Email" target="_blank">
-                                            <img src = "../Imagenes/gmail.svg" alt = "Email" />
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href = "https://www.linkedin.com/in/maria-camila-castro-cardona-8733b3265" title = "LinkedIn" target="_blank">
-                                            <img src = "../Imagenes/linkedin.svg" alt = "LinkedIn" />
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href = "https://github.com/milaCastroC" title = "GitHub" target="_blank">
-                                            <img src = "../Imagenes/github.svg" alt = "GitHub" />
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href = "https://www.instagram.com/mila_castro_c/" title = "Instagram" target="_blank">
-                                            <img src = "../Imagenes/instagram.svg" alt = "Instagram" />
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href = "https://www.facebook.com/mariacamila.castrocardona?mibextid=LQQJ4d" title = "Facebook" target="_blank">
-                                            <img src = "../Imagenes/facebook.svg" alt = "Facebook" />
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class = "info" id = "info">
-                            <address>
-                                <span>Maria Camila Castro Cardona</span>
-                                <a href = "mailto: castro.maria.5191@eam.edu.co" title = "Email" target="_blank">castro.maria.5191@eam.edu.co</a>
-                                <span>Cel: 3014181032</span>
-                            </address>
-                        </div>
-                </section>
-                    <div class = "footer-bottom">
-                        <div class = "footer-bottom-wrapper">
-                            <small>
-                                © Institucion universitaria EAM
-                                <span id = "year"></span>, All rights reserved
-                            </small>
+                    <div class="social-bottom">
+                        <div class="social-links">
+                            <ul>
+                                <li>
+                                    <a href="mailto: castro.maria.5191@eam.edu.co" title="Email" target="_blank">
+                                        <img src="../Imagenes/gmail.svg" alt="Email" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.linkedin.com/in/maria-camila-castro-cardona-8733b3265"
+                                        title="LinkedIn" target="_blank">
+                                        <img src="../Imagenes/linkedin.svg" alt="LinkedIn" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://github.com/milaCastroC" title="GitHub" target="_blank">
+                                        <img src="../Imagenes/github.svg" alt="GitHub" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/mila_castro_c/" title="Instagram"
+                                        target="_blank">
+                                        <img src="../Imagenes/instagram.svg" alt="Instagram" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.facebook.com/mariacamila.castrocardona?mibextid=LQQJ4d"
+                                        title="Facebook" target="_blank">
+                                        <img src="../Imagenes/facebook.svg" alt="Facebook" />
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
+                    <div class="info" id="info">
+                        <address>
+                            <span>Maria Camila Castro Cardona</span>
+                            <a href="mailto: castro.maria.5191@eam.edu.co" title="Email"
+                                target="_blank">castro.maria.5191@eam.edu.co</a>
+                            <span>Cel: 3014181032</span>
+                        </address>
+                    </div>
+                </section>
+                <div class="footer-bottom">
+                    <div class="footer-bottom-wrapper">
+                        <small>
+                            © Institucion universitaria EAM
+                            <span id="year"></span>, All rights reserved
+                        </small>
+                    </div>
+                </div>
             </div>
         </div>
     </footer>
-
+    <!--Enlace a el JavaScript-->
     <script src="../JS/scriptHome.js" defer></script>
 </body>
 
